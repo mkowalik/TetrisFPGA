@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sun Apr 23 11:38:21 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="16e9240bb70349e2b2fd6628d15e2a1e" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="3" type="JavaHandler"/>
+<property name="FlipToViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="RunSchematic" value="2" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="2" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="8" type="JavaHandler"/>
+<property name="ZoomFit" value="1" type="JavaHandler"/>
+<property name="ZoomOut" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="CORE.v, 131, 181" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 131, 181, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 155, 180" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 160, 183" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 181, 209" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 184, 98" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 184, 98, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 185, 58" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 185, 58, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 189, 231" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 192, 214" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 194, 81" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 194, 81, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 208, 160" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 214, 159" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 246, 101" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 247, 92" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 248, 157" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 264, 212" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 281, 180" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 285, 172" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 341, 160" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 90, 75" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 90, 75, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 109, 212" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 109, 220" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 273, 207" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 110, 145" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 110, 176" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 111, 164" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 111, 213" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 116, 229" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 195, 156" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ZOOM_FIT, Schematic_zoom_fit" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ZOOM_OUT, Schematic_zoom_out" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, TOP (TOP.v" value="22" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Elaborated Design, Schematic], 17, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Elaborated Design, Schematic], 18, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis], 12, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, synth_design -rtl -name rtl_1. , [Synth 8-685] variable 'h_sync' should not be used in output port connection [C:/Users/mdutk/Desktop/cyfra/PROJEKT TETRIS/project_2/project_2.srcs/sources_1/new/TOP.v:57]. ], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_WARNING_MESSAGES, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="4" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_SCHEMATIC, Schematic" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectTab_RELOAD, Reload" value="4" type="GuiResourceData"/>
+<property name="PS2.v, 262, 164" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
+<property name="RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, Don't show this dialog again, false" value="2" type="GuiResourceData"/>
+<property name="TOP.v, 103, 233" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 105, 161" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 105, 229" value="2" type="GuiResourceData"/>
+<property name="TOP.v, 109, 232" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 110, 146" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 110, 229" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 111, 213" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 112, 199" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 113, 142" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 113, 63" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 115, 162" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 121, 223" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 122, 189" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 123, 166" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 125, 210" value="2" type="GuiResourceData"/>
+<property name="TOP.v, 125, 210, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 128, 181" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 132, 126" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 136, 124" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 136, 129" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 136, 164" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 138, 251" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 139, 114" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 141, 229" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 144, 125" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 144, 159" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 144, 159, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 147, 171" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 147, 171, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 147, 60" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 154, 130" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 155, 177" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 161, 162" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 163, 182" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 164, 180" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 164, 248" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 166, 249" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 166, 261" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 179, 155" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 182, 162" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 187, 144" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 196, 203" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 199, 126" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 199, 133" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 206, 127" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 213, 143" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 218, 163" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 219, 146" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 222, 184" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 228, 128" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 228, 157" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 238, 177" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 241, 109" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 250, 131" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 253, 105" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 260, 162" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 265, 108" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 275, 140" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 275, 213" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 332, 228" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 46, 164" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 52, 182" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 55, 59" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 56, 114" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 71, 143" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 78, 155" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 92, 112" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 92, 132" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 94, 149" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 97, 236" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 105, 199" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 147, 60" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 175, 111" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 189, 97" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="2" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="1" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
