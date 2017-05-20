@@ -21,7 +21,7 @@
 
 
 module New_Brick(
-    input wire          clk_1Hz,
+    input wire          clk_down,
     input wire          Left,
     input wire          Right,
     input wire          New_brick,

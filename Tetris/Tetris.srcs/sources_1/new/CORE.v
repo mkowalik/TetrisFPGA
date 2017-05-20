@@ -21,7 +21,7 @@
 
 
 module CORE(
-    input wire          clk_1Hz,
+    input wire          clk_down,
     input wire          Key_pressed,
     input wire [7:0]    Key_code,
     output reg [8:0]    Old_brick_tab,
@@ -41,6 +41,7 @@ module CORE(
     );
     
     New_Brick my_New_Brick(
+        .clk_down(clk_down),
         .Left(Left),
         .Right(Right),
         .New_brick(New_brick),
@@ -59,7 +60,7 @@ module CORE(
         .Old_brick_tab(Old_brick_tab_nxt)
     );
     
-    always @ (clk_1Hz)
+    always @ (clk_down)
         begin
             Old_brick_tab   <=  Old_brick_tab_nxt;
             New_brick_tab   <=  New_brick_tab_nxt;

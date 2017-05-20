@@ -21,6 +21,7 @@
 
 
 module TOP(
+    input wire          clk,
     input wire          Keyboard_data,
     input wire          Keyboard_clk,
     output reg          h_sync,
@@ -32,7 +33,7 @@ module TOP(
     output reg          v_blnk
     );
     
-    wire        clk_1Hz, clk_10kHz, clk_40MHz;
+    wire        clk_down, clk_10kHz, clk_40MHz;
     wire        Key_pressed;
     wire [7:0]  Key_code;
     wire [8:0]  Old_brick_tab, New_brick_tab;
@@ -40,7 +41,31 @@ module TOP(
     wire [3:0]  Red_nxt, Blue_nxt, Green_nxt;
     wire        h_blnk_nxt, v_blnk_nxt;
     
+    clk_wiz_0 my_clk_wiz (
+        .clk(clk),
+        .clk100MHz(clk_100MHz),
+        .clk40MHz(clk_40MHz),
+        .reset('b0),
+        .locked()
+    );
+    
+    clk_divider my_clk_divider_10kHz(
+        .clk100MHz(clk_100MHz),
+        .clk_div(clk_10kHz)
+    );
+    
+    clk_divider
+    #(   
+        .divider(1) 
+    )
+     my_clk_divider_2Hz (
+        .clk100MHz(clk_100MHz),
+        .clk_div(clk_down)
+     );
+
+    
     PS2 my_PS2(
+        .clk_10kHz(clk_10kHz),
         .Keyboard_data(Keyboard_data),
         .Keyboard_clk(Keyboard_clk),
         .Key_pressed(Key_pressed),
@@ -48,6 +73,7 @@ module TOP(
     );
     
     CORE my_CORE(
+        .clk_down(clk_down),
         .Key_pressed(Key_pressed),
         .Key_code(Key_code),
         .Old_brick_tab(Old_brick_tab),
@@ -55,6 +81,7 @@ module TOP(
     );
     
     VGA my_VGA(
+        .clk_40MHz(clk_40MHz),
         .Old_brick_tab(Old_brick_tab),
         .New_brick_tab(New_brick_tab),
         .h_sync(h_sync_nxt),
