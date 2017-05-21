@@ -22,13 +22,11 @@
 
 module New_Brick(
     input wire              clk_down,
-    input wire              Left,
-    input wire              Right,
-    input wire              New_brick,
-    output reg [15*20:0]    New_brick_tab
+    input wire              left,
+    input wire              right,
+    input wire              new_brick_signal,
+    output reg [299:0]    brick_tab
     );
-    
-    reg [15*20:0] new_brick_shape_nxt; //indexing [x][y] === y*15+x
     
     localparam BRICK_TYPE_0 = 16'b1000111000000000;
     localparam BRICK_TYPE_1 = 16'b1100100010000000;
@@ -57,15 +55,51 @@ module New_Brick(
     end
     
     integer i, j;
+        
+    reg [299:0]   new_brick_tab_nxt;
     
-    always @(posedge New_brick) begin
+    always @* begin
         for (i=0; i<15; i = i+1) begin
             for (j=0; j<20; j = j+1) begin
                 if (j>=__position && j<__position+4 && i<4) 
-                    New_brick_tab <= __brick_prototype[i*4+j-__position];
+                    new_brick_tab_nxt[i*20+j] = __brick_prototype[i*4+j-__position];
                 else
-                    New_brick_tab <= 0;
+                    new_brick_tab_nxt[i*20+j] = 0;
             end
         end
     end
+    
+    always @(posedge new_brick_signal) begin
+        brick_tab <= new_brick_tab_nxt;
+    end
+    
+    reg [299:0]   brick_tab_nxt;
+    integer index;
+    
+    always @* begin
+        for (i=0; i<15; i = i+1) begin
+            for (j=0; j<20; j = j+1) begin
+                if (i==0)
+                    brick_tab_nxt[i*20+j] = 1'b0;
+                else begin
+                    case ({left, right})
+                        2'b10: begin 
+                            index = (j+1<20) ? ((i-1)*20+j+1) : (i-1)*20+j; 
+                            brick_tab_nxt[i*20+j] = brick_tab[index];
+                            end
+                        2'b01: begin
+                            index = j>0 ? (i-1)*20+j-1 : (i-1)*20+j;
+                            brick_tab_nxt[i*20+j] <= brick_tab[index];
+                            end
+                        default: brick_tab_nxt[i*20+j] <= brick_tab[(i-1)*20+j];
+                    endcase
+                end
+            end
+        end         
+    end
+    
+    always @(posedge clk_down) begin
+        brick_tab <= brick_tab_nxt;    
+    end
+        
 endmodule

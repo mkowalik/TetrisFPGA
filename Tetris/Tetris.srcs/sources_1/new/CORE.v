@@ -28,31 +28,31 @@ module CORE(
     output reg [8:0]    New_brick_tab
     );
     
-    wire            Left, Right; 
-    wire            New_brick;
+    wire            left, right; 
+    wire            new_brick_signal;
     wire    [8:0]   Tab_save, Old_brick_tab_nxt, New_brick_tab_nxt;
     
     
     Left_Right  my_Left_Right(
         .Key_pressed(Key_pressed),
         .Key_code(Key_code),
-        .Left(Left),
-        .Right(Right)
+        .Left(left),
+        .Right(right)
     );
     
     New_Brick my_New_Brick(
         .clk_down(clk_down),
-        .Left(Left),
-        .Right(Right),
-        .New_brick(New_brick),
-        .New_brick_tab(New_brick_tab_nxt)
+        .left(left),
+        .right(right),
+        .new_brick_signal(new_brick_signal),
+        .brick_tab(New_brick_tab_nxt)
     );
     
     Logic my_Logic(
         .New_brick_tab(New_brick_tab_nxt),
         .Old_brick_tab(Old_brick_tab_nxt),
         .Tab_save(Tab_save),
-        .New_brick(New_brick)
+        .New_brick(new_brick_signal)
     );
     
     Memory my_Memory(
