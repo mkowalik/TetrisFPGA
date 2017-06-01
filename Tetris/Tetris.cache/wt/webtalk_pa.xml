@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat May 20 13:25:50 2017">
+<application name="pa" timeStamp="Thu Jun 01 16:50:19 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="16e9240bb70349e2b2fd6628d15e2a1e" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -17,32 +17,563 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="6" type="JavaHandler"/>
+<property name="AddSources" value="11" type="JavaHandler"/>
 <property name="CoreView" value="1" type="JavaHandler"/>
 <property name="CustomizeCore" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="1" type="JavaHandler"/>
-<property name="FlipToViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="2" type="JavaHandler"/>
+<property name="FlipToViewTaskRTLAnalysis" value="2" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="RecustomizeCore" value="1" type="JavaHandler"/>
-<property name="RunSchematic" value="5" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
+<property name="RunSchematic" value="8" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="6" type="JavaHandler"/>
 <property name="SaveProjectAs" value="3" type="JavaHandler"/>
-<property name="ViewTaskProjectManager" value="3" type="JavaHandler"/>
-<property name="ViewTaskRTLAnalysis" value="10" type="JavaHandler"/>
-<property name="ZoomFit" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="6" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="11" type="JavaHandler"/>
+<property name="ZoomFit" value="7" type="JavaHandler"/>
 <property name="ZoomOut" value="3" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, Save Project As..." value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, Tetris" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 159, 314" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 182, 294" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 255, 112" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 255, 112, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="CORE.v, 387, 317" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="3" type="GuiResourceData"/>
+<property name="Left_Right.v, 109, 211" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 112, 174" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 120, 58" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 123, 162" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 144, 230" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 155, 210" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 156, 169" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 156, 229" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 157, 215" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 157, 230" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 157, 232" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 168, 173" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 168, 63" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 177, 77" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 188, 197" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 188, 209" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 192, 94" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 193, 92" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 201, 111" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 212, 234" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 218, 183" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 226, 188, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 234, 81" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 236, 95" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 257, 226" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 258, 159" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 258, 88" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 262, 176" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 280, 210" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 289, 206" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 318, 245" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 359, 217" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 428, 259" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 53, 127" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 53, 179" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 53, 187" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 91, 127" value="1" type="GuiResourceData"/>
+<property name="Left_Right.v, 97, 248" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 106, 193" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 108, 245" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 113, 176" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 114, 64" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 115, 245" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 121, 113" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 126, 165" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 128, 111" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 137, 135" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 139, 141" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 139, 153" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 141, 304" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 144, 260" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 147, 141" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 147, 213" value="2" type="GuiResourceData"/>
+<property name="Logic.v, 147, 332" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 150, 462" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 157, 387" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 174, 143" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 185, 100" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 187, 164" value="2" type="GuiResourceData"/>
+<property name="Logic.v, 187, 164, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 188, 101" value="2" type="GuiResourceData"/>
+<property name="Logic.v, 188, 153" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 189, 128" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 193, 126" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 193, 129" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 195, 127" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 197, 129" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 201, 113" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 220, 115" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 221, 267" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 224, 178" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 237, 118" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 238, 106" value="2" type="GuiResourceData"/>
+<property name="Logic.v, 238, 197" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 242, 127" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 244, 103" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 247, 457" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 248, 94" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 250, 101" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 250, 144" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 252, 126" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 253, 131" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 26, 235" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 260, 78" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 260, 78, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 266, 110" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 268, 96" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 277, 132" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 284, 145" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 285, 110" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 288, 112" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 292, 153" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 303, 154" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 307, 129" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 313, 334" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 315, 203" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 317, 32" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 323, 150" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 324, 141" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 328, 243" value="2" type="GuiResourceData"/>
+<property name="Logic.v, 334, 247" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 335, 78" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 338, 78" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 352, 332" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 356, 135" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 357, 188" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 363, 59" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 365, 55" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 401, 128" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 401, 143" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 402, 127" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 404, 127" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 405, 128" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 414, 150" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 417, 91" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 425, 142" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 432, 112" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 441, 125" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 455, 87" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 501, 123" value="2" type="GuiResourceData"/>
+<property name="Logic.v, 556, 192" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 75, 229" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 77, 219" value="2" type="GuiResourceData"/>
+<property name="Logic.v, 78, 228" value="1" type="GuiResourceData"/>
+<property name="Logic.v, 91, 77" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 103, 283" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 108, 370" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 129, 385" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 134, 166" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 137, 199, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 151, 308" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 153, 329" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 153, 329, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 158, 246" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 165, 199" value="2" type="GuiResourceData"/>
+<property name="Memory.v, 166, 410" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 179, 366" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 184, 368" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 185, 255" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 189, 380" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 215, 401" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 248, 390" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 273, 416" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 274, 353" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 285, 362" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 311, 247" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 315, 384" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 541, 70" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 56, 296" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 66, 295" value="1" type="GuiResourceData"/>
+<property name="Memory.v, 98, 404" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="4" type="GuiResourceData"/>
+<property name="New_Brick.v, 177, 159" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 206, 311" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 247, 61" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 362, 93" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 365, 346" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 365, 346, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 366, 402" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 410, 354" value="1" type="GuiResourceData"/>
+<property name="New_Brick.v, 85, 283" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, draw_new_brick" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, tab_to_position" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, vga_background" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources" value="4" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ZOOM_FIT, Schematic_zoom_fit" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, TOP (TOP.v" value="70" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, draw_new_brick (draw_new_brick.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, tab_to_position (tab_to_position.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, vga_background (vga_background.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, vga_timing (vga_timing.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files], 19" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 18" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 17" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Elaborated Design, Schematic], 17, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Elaborated Design, Schematic], 18, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Elaborated Design, Schematic], 18, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis], 12, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, rtl_1, refresh_design. , [Synth 8-2715] syntax error near " value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, rtl_1, refresh_design. , [Synth 8-285] failed synthesizing module 'TOP' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]. ], 3, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, rtl_1, refresh_design. , [Synth 8-448] named port connection 'h_sync' does not exist for instance 'my_VGA' of module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:87]. ], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, rtl_1, refresh_design. , [Synth 8-448] named port connection 'h_sync' does not exist for instance 'my_VGA' of module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:87]. ], 2, true" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, rtl_1, refresh_design. , [Synth 8-685] variable 'h_blnk' should not be used in output port connection [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:63]. ], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.NetlistTreeView_NETLIST_TREE, [TOP, Nets (53" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="20" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_SCHEMATIC, Schematic" value="3" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectTab_RELOAD, Reload" value="16" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, Also delete the project local file/directory from disk, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_SAVE, Save" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="3" type="GuiResourceData"/>
+<property name="PS2.v, 120, 453" value="1" type="GuiResourceData"/>
+<property name="PS2.v, 320, 416" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="8" type="GuiResourceData"/>
+<property name="RDIResource.ConfirmSaveTextEditsDialog_NO, No" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_DELETE, Remove File from Project..." value="1" type="GuiResourceData"/>
+<property name="TOP.v, 106, 175" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 445, 96" value="1" type="GuiResourceData"/>
+<property name="TOP.v, 76, 98" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 103, 350" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 103, 350, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 107, 166" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 112, 150" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 112, 182" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 113, 180" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 114, 169" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 115, 343" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 121, 212" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 124, 227" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 124, 306" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 126, 160" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 127, 147" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 127, 198" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 127, 232" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 129, 257" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 129, 298" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 129, 331" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 130, 199" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 131, 183" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 133, 181" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 133, 205" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 133, 315" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 134, 243" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 135, 185" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 135, 195" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 136, 176" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 137, 327" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 138, 353" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 139, 141" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 139, 195" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 139, 234" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 139, 25" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 141, 230" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 143, 72" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 145, 210" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 145, 311" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 145, 405" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 147, 191" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 147, 62" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 147, 62, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 149, 231" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 149, 249" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 149, 294" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 151, 179" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 151, 180" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 151, 192" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 151, 451" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 152, 317" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 152, 367" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 152, 389" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 153, 143" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 153, 279" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 153, 317" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 153, 336" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 154, 242" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 154, 245" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 155, 298" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 156, 197" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 157, 215" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 157, 231" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 157, 349" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 157, 364" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 160, 243" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 161, 266" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 161, 352" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 165, 133" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 165, 264" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 165, 365" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 169, 177" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 171, 171" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 174, 112" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 174, 400" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 176, 281" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 176, 377" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 177, 196" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 179, 337" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 180, 160" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 181, 143" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 181, 195" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 181, 196" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 181, 233" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 181, 298" value="2" type="GuiResourceData"/>
+<property name="VGA.v, 182, 179" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 182, 213" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 182, 214" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 182, 258" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 182, 328" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 182, 370" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 183, 177" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 185, 184" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 185, 223" value="2" type="GuiResourceData"/>
+<property name="VGA.v, 185, 249" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 185, 267" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 185, 276" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 186, 223" value="2" type="GuiResourceData"/>
+<property name="VGA.v, 187, 112" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 189, 164" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 191, 278" value="3" type="GuiResourceData"/>
+<property name="VGA.v, 192, 421" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 197, 226" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 200, 30" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 202, 347" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 205, 317" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 208, 28" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 208, 28, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 215, 471" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 216, 214" value="2" type="GuiResourceData"/>
+<property name="VGA.v, 219, 279" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 219, 359" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 220, 302" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 228, 149" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 229, 402" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 232, 296" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 240, 336" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 242, 135" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 243, 109" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 258, 361" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 259, 222" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 262, 112" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 262, 112, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 263, 362" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 267, 450" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 276, 471" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 288, 141" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 302, 97" value="2" type="GuiResourceData"/>
+<property name="VGA.v, 309, 252" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 312, 162" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 321, 311" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 323, 212" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 366, 162" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 413, 383" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 419, 112" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 443, 211" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 450, 194" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 450, 198" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 483, 101" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 50, 383" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 574, 282" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 585, 217" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 65, 216" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 69, 127" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 75, 109" value="1" type="GuiResourceData"/>
+<property name="VGA.v, 85, 365" value="2" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 120, 366" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 128, 436" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 135, 390" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 137, 281" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 138, 415" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 140, 259" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 141, 309" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 146, 256" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 159, 158" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 162, 367" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 163, 332" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 165, 366" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 166, 337" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 178, 383" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 198, 476" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 210, 439" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 214, 416" value="2" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 216, 316" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 222, 213" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 227, 194" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 227, 386" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 227, 396" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 233, 326" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 233, 368" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 233, 379" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 251, 267" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 253, 215" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 260, 383" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 27, 455" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 271, 390" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 281, 393" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 288, 378" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 296, 132" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 313, 155" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 496, 404" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 50, 316" value="1" type="GuiResourceData"/>
+<property name="draw_new_brick.v, 84, 393" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 119, 416" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 135, 376" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 143, 404" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 153, 415" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 168, 381" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 175, 420" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 181, 417" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 198, 414" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 207, 356" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 214, 401" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 214, 454" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 216, 428" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 266, 455" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 29, 417" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 387, 233" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 43, 434" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 44, 415" value="1" type="GuiResourceData"/>
+<property name="tab_to_position.v, 61, 420" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 0, 129" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 102, 166" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 103, 208" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 104, 181" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 105, 411" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 106, 153" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 106, 237" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 106, 247" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 106, 296" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 106, 315" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 106, 345" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 108, 365" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 108, 370" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 110, 159" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 110, 433" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 111, 415" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 112, 122" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 113, 302" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 113, 433" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 114, 230" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 114, 438" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 119, 419" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 123, 124" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 127, 60" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 131, 391" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 136, 385" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 137, 61" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 139, 17" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 142, 360" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 154, 396" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 160, 369" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 162, 90" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 164, 42" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 170, 209" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 173, 298" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 180, 382" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 181, 366" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 184, 242" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 185, 174" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 195, 424" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 196, 375" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 202, 108" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 206, 244" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 207, 399" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 208, 250" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 209, 368" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 210, 199" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 211, 167" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 213, 367" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 214, 327" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 214, 401" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 217, 245" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 22, 283" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 225, 400" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 226, 285" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 226, 298" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 226, 393" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 230, 249" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 230, 366" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 231, 223" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 231, 87" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 233, 246" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 235, 270" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 236, 397" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 237, 336" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 244, 133" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 245, 262" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 245, 385" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 246, 229" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 255, 145" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 258, 108" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 268, 413" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 270, 380" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 272, 97" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 275, 233" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 277, 146" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 284, 398" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 284, 401" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 285, 68" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 286, 358" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 291, 400" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 296, 262" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 297, 262" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 300, 401" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 301, 377" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 306, 403" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 310, 274" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 311, 58" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 313, 385" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 319, 273" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 320, 289" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 322, 388" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 324, 161" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 328, 130" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 328, 368" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 339, 326" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 340, 381" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 386, 237" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 389, 268" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 397, 398" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 407, 139" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 452, 417" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 456, 404" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 457, 138" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 465, 370" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 471, 223" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 472, 382" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 48, 195" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 49, 96" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 502, 399" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 503, 108" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 505, 385" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 55, 173" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 562, 392" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 60, 187" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 69, 327" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 69, 327, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 72, 315" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 77, 269" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 81, 410" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 85, 346" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 97, 402" value="1" type="GuiResourceData"/>
+<property name="vga_background.v, 99, 290" value="1" type="GuiResourceData"/>
+<property name="vga_timing.v, 152, 184" value="1" type="GuiResourceData"/>
+<property name="vga_timing.v, 153, 212" value="1" type="GuiResourceData"/>
+<property name="vga_timing.v, 241, 181" value="1" type="GuiResourceData"/>
+<property name="vga_timing.v, 99, 252" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="28" type="GuiMode"/>
+<property name="GuiMode" value="44" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="22" type="TclMode"/>
+<property name="TclMode" value="27" type="TclMode"/>
 </item>
 </section>
 </application>

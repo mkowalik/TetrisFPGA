@@ -21,7 +21,20 @@
 
 
 module Memory(
-    input wire [8:0]    Tab_save,
-    output reg [8:0]    Old_brick_tab
+    input   wire          New_brick_signal,
+    input   wire [8:0]    Tab_save,
+    output  wire [8:0]    Old_brick_tab
     );
+    
+    reg [8:0] Old_brick_tab_nxt;
+    
+    always @ *
+        if(New_brick_signal)
+            Old_brick_tab_nxt = Tab_save;
+        else    
+            Old_brick_tab_nxt = Old_brick_tab;
+            
+    assign  Old_brick_tab = Old_brick_tab_nxt;  
+    
+    
 endmodule

@@ -56,6 +56,7 @@ module CORE(
     );
     
     Memory my_Memory(
+        .New_brick_signal(new_brick_signal),
         .Tab_save(Tab_save),
         .Old_brick_tab(Old_brick_tab_nxt)
     );

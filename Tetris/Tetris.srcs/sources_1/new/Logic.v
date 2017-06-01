@@ -26,4 +26,27 @@ module Logic(
     output reg  [8:0]   Tab_save,
     output reg          New_brick
     );
+    
+    reg [8:0] log_tab;
+    
+    always @ *
+        begin
+            log_tab = Old_brick_tab << 25; // ??
+            if ( (New_brick_tab | log_tab) == 1)
+                begin
+                    New_brick = 'b1;
+                    Tab_save = (New_brick_tab | Old_brick_tab);
+                  //  if ( (New_brick_tab | Old_brick_tab) ==  ) // ??
+                end
+            else 
+                begin
+                    New_brick = 'b0;
+                    Tab_save = Old_brick_tab;
+                end
+        end
+
+    
+    
+    
+    
 endmodule

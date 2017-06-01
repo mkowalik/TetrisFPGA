@@ -84,13 +84,13 @@ module TOP(
         .clk_40MHz(clk_40MHz),
         .Old_brick_tab(Old_brick_tab),
         .New_brick_tab(New_brick_tab),
-        .h_sync(h_sync_nxt),
-        .v_sync(v_sync_nxt),
+        .hsync_out(h_sync_nxt),
+        .vsync_out(v_sync_nxt),
         .Red(Red_nxt),
         .Blue(Blue_nxt),
         .Green(Green_nxt),
-        .h_blnk(h_blnk_nxt),
-        .v_blnk(v_blnk_nxt)
+        .hblnk_out(h_blnk_nxt),
+        .vblnk_out(v_blnk_nxt)
     );
     
     always @ (clk_40MHz)

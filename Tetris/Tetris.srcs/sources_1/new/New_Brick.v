@@ -25,7 +25,7 @@ module New_Brick(
     input wire              left,
     input wire              right,
     input wire              new_brick_signal,
-    output reg [299:0]    brick_tab
+    output reg [299:0]      brick_tab
     );
     
     localparam BRICK_TYPE_0 = 16'b1000111000000000;
