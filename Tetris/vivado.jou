@@ -2,42 +2,11 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu Jun 01 10:38:21 2017
-# Process ID: 12128
+# Start of session at: Thu Jun 01 16:57:22 2017
+# Process ID: 14080
 # Current directory: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5544 C:\Users\mdutk\Desktop\ProjektCyfrowka\Tetris\Tetris.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11268 C:\Users\mdutk\Desktop\ProjektCyfrowka\Tetris\Tetris.xpr
 # Log file: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/vivado.log
 # Journal file: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.xpr
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-synth_design -rtl -name rtl_1
-refresh_design
-close [ open C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v w ]
-add_files C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v
-update_compile_order -fileset sources_1
-close [ open C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/tab_to_position.v w ]
-add_files C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/tab_to_position.v
-update_compile_order -fileset sources_1
-remove_files C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/tab_to_position.v
-update_compile_order -fileset sources_1
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-close [ open C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v w ]
-add_files C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-refresh_design

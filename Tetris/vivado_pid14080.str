@@ -1,0 +1,87 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 14080
+
+Current time: 	6/1/17 4:57:30 PM CEST
+Time zone: 	Central European Time (Europe/Belgrade)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	mdutk
+User home directory: C:/Users/mdutk
+User working directory: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/mdutk/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/mdutk/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	221 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 390 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# Current time: 6/1/17 4:57:30 PM CEST
+# Process ID: 14080
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: ERROR: [ProjectBase 63-9] XML parser encountered a problem in C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.xpr at line 7 : Not well formed
+ (See C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/vivado_pid14080.debug)
+*/
+// [GUI Memory]: 32 MB (+31055kb) [00:00:04]
+// [Engine Memory]: 390 MB (+257243kb) [00:00:04]
+// HOptionPane Error: "ERROR: [ProjectBase 63-9] XML parser encountered a problem in C:/Users/mdutk/Desktop/<br>ProjektCyfrowka/Tetris/Tetris.xpr at line 7 : Not well formed  (Vivado v2016.2 (64-bit))"
+// HMemoryUtils.trashcanNow. Engine heap size: 408 MB. GUI used memory: 26 MB. Current time: 6/1/17 4:57:35 PM CEST
+selectButton("RDIResource.MainWindowUtils_ERROR_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.xpr", 0); // q:v (JViewport:JComponent, cv:JFrame)
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# Current time: 6/1/17 4:57:39 PM CEST
+# Process ID: 14080
+# Platform: Windows
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: ERROR: [ProjectBase 63-9] XML parser encountered a problem in C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.xpr at line 7 : Not well formed
+ (See C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/vivado_pid14080.debug)
+*/
+// HOptionPane Error: "ERROR: [ProjectBase 63-9] XML parser encountered a problem in C:/Users/mdutk/Desktop/<br>ProjektCyfrowka/Tetris/Tetris.xpr at line 7 : Not well formed  (Vivado v2016.2 (64-bit))"
+// [GUI Memory]: 34 MB (+306kb) [00:00:13]
+selectButton("RDIResource.MainWindowUtils_ERROR_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// [GUI Memory]: 36 MB (+66kb) [00:00:18]
+// [Engine Memory]: 410 MB (+599kb) [00:00:18]
+// [GUI Memory]: 39 MB (+1332kb) [00:00:28]
