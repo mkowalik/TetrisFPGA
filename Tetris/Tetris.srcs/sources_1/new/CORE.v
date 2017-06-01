@@ -19,18 +19,20 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+//width: 25, height: 18, brick: 32x32 pixels, 25*18 = 450
 
 module CORE(
-    input wire          clk_down,
-    input wire          Key_pressed,
-    input wire [7:0]    Key_code,
-    output reg [8:0]    Old_brick_tab,
-    output reg [8:0]    New_brick_tab
+    input wire           clk_down,
+    input wire           clk_100MHz,
+    input wire           Key_pressed,
+    input wire [7:0]     Key_code,  //TODO change for [15:0]
+    output reg [449:0]   Old_brick_tab,
+    output reg [449:0]   New_brick_tab
     );
     
     wire            left, right; 
     wire            new_brick_signal;
-    wire    [8:0]   Tab_save, Old_brick_tab_nxt, New_brick_tab_nxt;
+    wire  [449:0]   Tab_save, Old_brick_tab_nxt, New_brick_tab_nxt;
     
     
     Left_Right  my_Left_Right(
@@ -42,6 +44,7 @@ module CORE(
     
     New_Brick my_New_Brick(
         .clk_down(clk_down),
+        .clk_100MHz(clk_100MHz),
         .left(left),
         .right(right),
         .new_brick_signal(new_brick_signal),

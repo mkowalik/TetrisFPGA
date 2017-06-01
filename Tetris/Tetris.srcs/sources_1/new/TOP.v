@@ -20,10 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module TOP(
+module TOP (
     input wire          clk,
-    input wire          Keyboard_data,
-    input wire          Keyboard_clk,
+    inout wire          ps2_data,
+    inout wire          ps2_clk,
     output reg          h_sync,
     output reg          v_sync,
     output reg  [3:0]   Red,
@@ -33,7 +33,7 @@ module TOP(
     output reg          v_blnk
     );
     
-    wire        clk_down, clk_10kHz, clk_40MHz;
+    wire        clk_down, clk_10kHz, clk_40MHz, clk_100MHz;
     wire        Key_pressed;
     wire [7:0]  Key_code;
     wire [8:0]  Old_brick_tab, New_brick_tab;
@@ -65,15 +65,16 @@ module TOP(
 
     
     PS2 my_PS2(
-        .clk_10kHz(clk_10kHz),
-        .Keyboard_data(Keyboard_data),
-        .Keyboard_clk(Keyboard_clk),
+        .clk_100MHz(clk_100MHz),
+        .Keyboard_data(ps2_data),
+        .Keyboard_clk(ps2_clk),
         .Key_pressed(Key_pressed),
         .Key_code(Key_code)
     );
     
     CORE my_CORE(
         .clk_down(clk_down),
+        .clk_100MHz(clk_100MHz),
         .Key_pressed(Key_pressed),
         .Key_code(Key_code),
         .Old_brick_tab(Old_brick_tab),
