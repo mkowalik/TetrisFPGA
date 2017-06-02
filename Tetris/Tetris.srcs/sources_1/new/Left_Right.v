@@ -22,8 +22,41 @@
 
 module Left_Right(
     input wire          Key_pressed,
-    input wire [7:0]    Key_code,
-    output reg          Left,
-    output reg          Right
+    input wire [15:0]   Key_code,
+    output wire         Left,
+    output wire         Right
     );
+    
+    localparam      KEY_LEFT    = 'hE06B,
+                    KEY_RIGHT   = 'hE074;
+    
+    reg Left_nxt, Right_nxt;
+    
+    always @ *
+        if(Key_pressed)
+            if(Key_code == KEY_LEFT)
+                begin
+                    Left_nxt    = 'b1;
+                    Right_nxt   = 'b0;
+                end
+            else if (Key_code == KEY_RIGHT)
+                begin
+                    Left_nxt    = 'b0;
+                    Right_nxt   = 'b1;
+                end
+            else 
+                begin
+                    Left_nxt    = 'b0;
+                    Right_nxt   = 'b0;
+                end
+        else
+            begin
+                Left_nxt    = 'b0;
+                Right_nxt   = 'b0;
+            end
+            
+    assign Left     =   Left_nxt;
+    assign Right    =   Right_nxt;
+    
+    
 endmodule
