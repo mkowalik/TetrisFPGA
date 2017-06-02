@@ -25,7 +25,7 @@ module CORE(
     input wire           clk_down,
     input wire           clk_100MHz,
     input wire           Key_pressed,
-    input wire [7:0]     Key_code,  //TODO change for [15:0]
+    input wire [15:0]    Key_code,  //TODO change for [15:0]
     output reg [449:0]   Old_brick_tab,
     output reg [449:0]   New_brick_tab
     );

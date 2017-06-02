@@ -26,7 +26,7 @@ module PS2(
     input wire           Keyboard_data,
     input wire           Keyboard_clk,
     output reg           Key_pressed,
-    output reg [7:0]     Key_code   //TODO change for [15:0]
+    output reg [15:0]    Key_code   //TODO change for [15:0]
     );
     
     reg clk_50MHz = 1'b0;

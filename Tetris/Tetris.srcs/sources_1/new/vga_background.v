@@ -21,7 +21,7 @@
 
 
 module draw_background(
-    input wire [8:0]  Old_brick_tab,
+    input wire [449:0]  Old_brick_tab,
     input wire [10:0] hcount_in,
     input wire        hsync_in,
     input wire        hblnk_in,
@@ -42,7 +42,7 @@ module draw_background(
     reg [3:0] r;
     reg [3:0] g;
     reg [3:0] b;
-    reg [8:0] Old_brick_tab_del;
+    reg [449:0] Old_brick_tab_del;
     
     always @(posedge pclk_in)
       begin
@@ -73,7 +73,7 @@ module draw_background(
                   // Active display, interior, fill with gray.
                   // You will replace this with your own test.
                   else if (Old_brick_tab_del[((vcount_in/32)*25)+(hcount_in/32)])
-                    {r,g,b} <= 12'h3_4_5;
+                    {r,g,b} <= 12'hf_0_f;
                   else if (vcount_in > 575) {r,b,g} <= 12'h0_0_0;
               end
           end

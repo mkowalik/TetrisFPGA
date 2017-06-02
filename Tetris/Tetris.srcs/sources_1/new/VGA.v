@@ -22,8 +22,8 @@
 
 module VGA(
     input wire          clk_40MHz,
-    input wire  [8:0]   Old_brick_tab,
-    input wire  [8:0]   New_brick_tab,
+    input wire  [449:0] Old_brick_tab,
+    input wire  [449:0] New_brick_tab,
     output reg          hsync_out,
     output reg          vsync_out,
     output reg  [3:0]   Red,
