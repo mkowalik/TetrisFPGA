@@ -24,19 +24,19 @@ module TOP (
     input wire          clk,
     inout wire          ps2_data,
     inout wire          ps2_clk,
-    output reg          h_sync,
-    output reg          v_sync,
-    output reg  [3:0]   Red,
-    output reg  [3:0]   Blue,
-    output reg  [3:0]   Green,
+    output reg          hs,
+    output reg          vs,
+    output reg  [3:0]   r,
+    output reg  [3:0]   b,
+    output reg  [3:0]   g,
     output reg          h_blnk,
     output reg          v_blnk
     );
     
     wire        clk_down, clk_10kHz, clk_40MHz, clk_100MHz;
     wire        Key_pressed;
-    wire [7:0]  Key_code;
-    wire [8:0]  Old_brick_tab, New_brick_tab;
+    wire [15:0] Key_code;
+    wire [449:0]Old_brick_tab, New_brick_tab;
     wire        h_sync_nxt, v_sync_nxt;
     wire [3:0]  Red_nxt, Blue_nxt, Green_nxt;
     wire        h_blnk_nxt, v_blnk_nxt;
@@ -96,11 +96,11 @@ module TOP (
     
     always @ (clk_40MHz)
         begin
-            h_sync <=  h_sync_nxt;
-            v_sync <=  v_sync_nxt;
-            Red    <=  Red_nxt;
-            Blue   <=  Blue_nxt;
-            Green  <=  Green_nxt;
+            hs <=  h_sync_nxt;
+            vs <=  v_sync_nxt;
+            r    <=  Red_nxt;
+            b    <=  Blue_nxt;
+            g    <=  Green_nxt;
             h_blnk <=   h_blnk_nxt;
             v_blnk <=   v_blnk_nxt;
         end

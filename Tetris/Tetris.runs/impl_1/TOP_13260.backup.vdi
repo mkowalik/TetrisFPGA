@@ -1,0 +1,563 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Jun 02 15:47:02 2017
+# Process ID: 13260
+# Current directory: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1
+# Command line: vivado.exe -log TOP.vdi -applog -messageDb vivado.pb -mode batch -source TOP.tcl -notrace
+# Log file: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP.vdi
+# Journal file: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 911.523 ; gain = 470.004
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'vs'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vs'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hs'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hs'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pclk_mirror'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pclk_mirror'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 911.523 ; gain = 704.816
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 911.523 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 22881dd99
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 268d788f1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 916.688 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 2 cells.
+Phase 2 Constant Propagation | Checksum: 29007c8e9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 916.688 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 94 unconnected nets.
+INFO: [Opt 31-11] Eliminated 44 unconnected cells.
+Phase 3 Sweep | Checksum: 1ef7361f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 916.688 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 916.688 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1ef7361f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 916.688 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1ef7361f8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 916.688 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 30 Warnings, 30 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 916.688 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 916.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 916.688 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 ParallelPlaceIOClockAndInitTop
+
+Phase 1.1.1.1 Pre-Place Cells
+Phase 1.1.1.1 Pre-Place Cells | Checksum: e4a59b2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 916.688 ; gain = 0.000
+
+Phase 1.1.1.2 Constructing HAPIClkRuleMgr
+Phase 1.1.1.2 Constructing HAPIClkRuleMgr | Checksum: e4a59b2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 916.688 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.1.3 IO and Clk Clean Up
+
+Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr
+Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr | Checksum: e4a59b2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.860 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 1.1.1.3 IO and Clk Clean Up | Checksum: e4a59b2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.870 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 1.1.1.4 Implementation Feasibility check On IDelay
+Phase 1.1.1.4 Implementation Feasibility check On IDelay | Checksum: e4a59b2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.870 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 1.1.1.5 Commit IO Placement
+Phase 1.1.1.5 Commit IO Placement | Checksum: 2c85627f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.870 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 1.1.1 ParallelPlaceIOClockAndInitTop | Checksum: 2c85627f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.870 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8625272d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.870 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Make Others
+Phase 1.2.1.1 Make Others | Checksum: cdb3340c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.930 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 1.2.1.2 Init Lut Pin Assignment
+Phase 1.2.1.2 Init Lut Pin Assignment | Checksum: cdb3340c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.940 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 1.2.1 Place Init Design | Checksum: badc3b73
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 1.2 Build Placer Netlist Model | Checksum: badc3b73
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: badc3b73
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 1 Placer Initialization | Checksum: badc3b73
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: bee48f0b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: bee48f0b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 133209047
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 12750f7e3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 12750f7e3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 11ab75d49
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 11ab75d49
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: e06b0bba
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 196d7c1ee
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 196d7c1ee
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 196d7c1ee
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 3 Detail Placement | Checksum: 196d7c1ee
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 updateClock Trees: PCOPT
+Phase 4.1.1 updateClock Trees: PCOPT | Checksum: 16c711927
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 4.1.2 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=5.791. For the most accurate timing information please run report_timing.
+Phase 4.1.2 Post Placement Optimization | Checksum: 1fb30f778
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 4.1 Post Commit Optimization | Checksum: 1fb30f778
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1fb30f778
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 4.3 Uram Pipeline Register Optimization
+Phase 4.3 Uram Pipeline Register Optimization | Checksum: 1fb30f778
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 4.4 Post Placement Cleanup
+Phase 4.4 Post Placement Cleanup | Checksum: 1fb30f778
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 4.5 Placer Reporting
+Phase 4.5 Placer Reporting | Checksum: 1fb30f778
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+
+Phase 4.6 Final Placement Cleanup
+Phase 4.6 Final Placement Cleanup | Checksum: 2083e39ea
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2083e39ea
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+Ending Placer Task | Checksum: 16dd14ebb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 932.465 ; gain = 15.777
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 30 Warnings, 30 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 932.465 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.066 . Memory (MB): peak = 932.465 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 932.465 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 932.465 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: ef32d11f ConstDB: 0 ShapeSum: 7e9e7d9c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 90251c67
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 90251c67
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 90251c67
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 90251c67
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1359ea6d6
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.772  | TNS=0.000  | WHS=-0.144 | THS=-2.015 |
+
+Phase 2 Router Initialization | Checksum: 121717418
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 120d889d9
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1b05a00ae
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.807  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 271a8fc21
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+Phase 4 Rip-up And Reroute | Checksum: 271a8fc21
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1bb2579a0
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.899  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1bb2579a0
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1bb2579a0
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+Phase 5 Delay and Skew Optimization | Checksum: 1bb2579a0
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 26841355a
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.899  | TNS=0.000  | WHS=0.106  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 26841355a
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+Phase 6 Post Hold Fix | Checksum: 26841355a
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0368333 %
+  Global Horizontal Routing Utilization  = 0.0432067 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1ac00cc57
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1ac00cc57
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1320a1af0
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.899  | TNS=0.000  | WHS=0.106  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1320a1af0
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1038.781 ; gain = 106.316
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1038.781 ; gain = 106.316
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 30 Warnings, 30 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1038.781 ; gain = 106.316
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1038.781 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 02 15:47:56 2017...

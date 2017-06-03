@@ -21,14 +21,17 @@
 //Testowy komentarz
 
 module Logic(
-    input wire  [8:0]   New_brick_tab,
-    input wire  [8:0]   Old_brick_tab,
-    output reg  [8:0]   Tab_save,
-    output reg          New_brick
+    input wire  [449:0]   New_brick_tab,
+    input wire  [449:0]   Old_brick_tab,
+    output reg  [449:0]   Tab_save,
+    output reg            New_brick
     );
     
-    reg [8:0] log_tab;
+    reg [449:0] log_tab;
     
+    
+    
+    /*
     always @ *
         begin
             log_tab = Old_brick_tab << 25; // ??
@@ -45,7 +48,7 @@ module Logic(
                 end
         end
 
-    
+    */
     
     
     

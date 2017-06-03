@@ -22,11 +22,11 @@
 
 module Memory(
     input   wire          New_brick_signal,
-    input   wire [8:0]    Tab_save,
-    output  wire [8:0]    Old_brick_tab
+    input   wire [449:0]    Tab_save,
+    output  wire [449:0]    Old_brick_tab
     );
     
-    reg [8:0] Old_brick_tab_nxt;
+    reg [449:0] Old_brick_tab_nxt;
     
     always @ *
         if(New_brick_signal)

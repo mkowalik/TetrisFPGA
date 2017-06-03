@@ -2,11 +2,1699 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu Jun 01 16:57:22 2017
-# Process ID: 14080
+# Start of session at: Fri Jun 02 15:42:49 2017
+# Process ID: 13892
 # Current directory: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11268 C:\Users\mdutk\Desktop\ProjektCyfrowka\Tetris\Tetris.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14604 C:\Users\mdutk\Desktop\ProjektCyfrowka\Tetris\Tetris.xpr
 # Log file: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/vivado.log
 # Journal file: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 812.852 ; gain = 161.836
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35ticpg236-1L
+Top: TOP
+WARNING: [Synth 8-976] clk_clk_wiz_0 has already been declared [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+WARNING: [Synth 8-2654] second declaration of clk_clk_wiz_0 ignored [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+INFO: [Synth 8-994] clk_clk_wiz_0 is declared here [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 812.852 ; gain = 605.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (4#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (5#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (6#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (7#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 2000 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 5000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_10kHz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 1 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_2Hz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+INFO: [Synth 8-638] synthesizing module 'PS2' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'PS2_Controller' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+	Parameter INITIALIZE_MOUSE bound to: 0 - type: integer 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_DATA_IN bound to: 3'b001 
+	Parameter PS2_STATE_2_COMMAND_OUT bound to: 3'b010 
+	Parameter PS2_STATE_3_END_TRANSFER bound to: 3'b011 
+	Parameter PS2_STATE_4_END_DELAYED bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Data_In' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_WAIT_FOR_DATA bound to: 3'b001 
+	Parameter PS2_STATE_2_DATA_IN bound to: 3'b010 
+	Parameter PS2_STATE_3_PARITY_IN bound to: 3'b011 
+	Parameter PS2_STATE_4_STOP_IN bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Data_In' (9#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Command_Out' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+	Parameter CLOCK_CYCLES_FOR_101US bound to: 5050 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_101US bound to: 13 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_101US bound to: 13'b0000000000001 
+	Parameter CLOCK_CYCLES_FOR_15MS bound to: 750000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_15MS bound to: 20 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_15MS bound to: 20'b00000000000000000001 
+	Parameter CLOCK_CYCLES_FOR_2MS bound to: 100000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_2MS bound to: 17 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_2MS bound to: 17'b00000000000000001 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_INITIATE_COMMUNICATION bound to: 3'b001 
+	Parameter PS2_STATE_2_WAIT_FOR_CLOCK bound to: 3'b010 
+	Parameter PS2_STATE_3_TRANSMIT_DATA bound to: 3'b011 
+	Parameter PS2_STATE_4_TRANSMIT_STOP_BIT bound to: 3'b100 
+	Parameter PS2_STATE_5_RECEIVE_ACK_BIT bound to: 3'b101 
+	Parameter PS2_STATE_6_COMMAND_WAS_SENT bound to: 3'b110 
+	Parameter PS2_STATE_7_TRANSMISSION_ERROR bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:125]
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Command_Out' (10#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PS2_Controller' (11#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+INFO: [Synth 8-256] done synthesizing module 'PS2' (12#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+INFO: [Synth 8-638] synthesizing module 'Left_Right' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+	Parameter KEY_LEFT bound to: 57451 - type: integer 
+	Parameter KEY_RIGHT bound to: 57460 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Left_Right' (13#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'Key_code' does not match port width (16) of module 'Left_Right' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:40]
+INFO: [Synth 8-638] synthesizing module 'New_Brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+	Parameter BRICK_TYPE_0 bound to: 16'b1000111000000000 
+	Parameter BRICK_TYPE_1 bound to: 16'b1100100010000000 
+	Parameter BRICK_TYPE_2 bound to: 16'b1100110000000000 
+	Parameter BRICK_TYPE_3 bound to: 16'b1000000000000000 
+	Parameter BRICK_TYPE_4 bound to: 16'b1000100010001000 
+	Parameter BRICK_TYPE_5 bound to: 16'b1111000000000000 
+INFO: [Synth 8-256] done synthesizing module 'New_Brick' (14#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+INFO: [Synth 8-638] synthesizing module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Logic' (15#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+WARNING: [Synth 8-689] width (450) of port connection 'New_brick_tab' does not match port width (9) of module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:55]
+WARNING: [Synth 8-689] width (450) of port connection 'Old_brick_tab' does not match port width (9) of module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:56]
+WARNING: [Synth 8-689] width (450) of port connection 'Tab_save' does not match port width (9) of module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:57]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (16#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+WARNING: [Synth 8-689] width (450) of port connection 'Tab_save' does not match port width (9) of module 'Memory' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:63]
+WARNING: [Synth 8-689] width (450) of port connection 'Old_brick_tab' does not match port width (9) of module 'Memory' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:64]
+WARNING: [Synth 8-567] referenced signal 'Old_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+WARNING: [Synth 8-567] referenced signal 'New_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+INFO: [Synth 8-256] done synthesizing module 'CORE' (17#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+WARNING: [Synth 8-689] width (9) of port connection 'Old_brick_tab' does not match port width (450) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:80]
+WARNING: [Synth 8-689] width (9) of port connection 'New_brick_tab' does not match port width (450) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:81]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+	Parameter HORTOTAL bound to: 1056 - type: integer 
+	Parameter HORBLANKSTART bound to: 800 - type: integer 
+	Parameter HORSYNCSTART bound to: 840 - type: integer 
+	Parameter HORSYNCSTOP bound to: 968 - type: integer 
+	Parameter VERTOTAL bound to: 628 - type: integer 
+	Parameter VERBLANKSTART bound to: 600 - type: integer 
+	Parameter VERSYNCSTART bound to: 601 - type: integer 
+	Parameter VERSYNCSTOP bound to: 605 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (18#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (19#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:71]
+INFO: [Synth 8-638] synthesizing module 'draw_new_brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_new_brick' (20#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+WARNING: [Synth 8-3848] Net hblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:32]
+WARNING: [Synth 8-3848] Net vblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:33]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (21#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+WARNING: [Synth 8-567] referenced signal 'h_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Red_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Blue_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Green_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'h_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (22#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-3331] design draw_new_brick has unconnected port vblnk_in
+WARNING: [Synth 8-3331] design VGA has unconnected port hblnk_out
+WARNING: [Synth 8-3331] design VGA has unconnected port vblnk_out
+WARNING: [Synth 8-3331] design Altera_UP_PS2_Data_In has unconnected port ps2_clk_negedge
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 841.105 ; gain = 634.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_10kHz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_2Hz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 841.105 ; gain = 634.230
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'vs'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vs'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hs'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hs'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'r[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[0]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[1]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[2]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b[3]'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pclk_mirror'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pclk_mirror'. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFGCE => BUFGCTRL: 2 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:57 ; elapsed = 00:00:42 . Memory (MB): peak = 1131.453 ; gain = 924.578
+61 Infos, 60 Warnings, 30 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1131.453 ; gain = 318.602
+launch_runs synth_1 -jobs 2
+[Fri Jun 02 15:44:23 2017] Launched synth_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Jun 02 15:46:56 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jun 02 15:49:25 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v" into library work [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:1]
+[Fri Jun 02 15:52:35 2017] Launched synth_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v" into library work [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:1]
+[Fri Jun 02 15:53:46 2017] Launched synth_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Jun 02 15:54:53 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jun 02 15:56:54 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795574A
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jun 02 15:59:50 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jun 02 16:05:42 2017] Launched synth_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/synth_1/runme.log
+[Fri Jun 02 16:05:42 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Jun 02 16:10:13 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jun 02 16:12:13 2017] Launched synth_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/synth_1/runme.log
+[Fri Jun 02 16:12:13 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_design
+WARNING: [Synth 8-976] clk_clk_wiz_0 has already been declared [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+WARNING: [Synth 8-2654] second declaration of clk_clk_wiz_0 ignored [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+INFO: [Synth 8-994] clk_clk_wiz_0 is declared here [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:13 ; elapsed = 00:38:31 . Memory (MB): peak = 1281.145 ; gain = 1074.270
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (4#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (5#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (6#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (7#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 2000 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 5000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_10kHz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 1 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_2Hz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+INFO: [Synth 8-638] synthesizing module 'PS2' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'PS2_Controller' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+	Parameter INITIALIZE_MOUSE bound to: 0 - type: integer 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_DATA_IN bound to: 3'b001 
+	Parameter PS2_STATE_2_COMMAND_OUT bound to: 3'b010 
+	Parameter PS2_STATE_3_END_TRANSFER bound to: 3'b011 
+	Parameter PS2_STATE_4_END_DELAYED bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Data_In' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_WAIT_FOR_DATA bound to: 3'b001 
+	Parameter PS2_STATE_2_DATA_IN bound to: 3'b010 
+	Parameter PS2_STATE_3_PARITY_IN bound to: 3'b011 
+	Parameter PS2_STATE_4_STOP_IN bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Data_In' (9#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Command_Out' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+	Parameter CLOCK_CYCLES_FOR_101US bound to: 5050 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_101US bound to: 13 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_101US bound to: 13'b0000000000001 
+	Parameter CLOCK_CYCLES_FOR_15MS bound to: 750000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_15MS bound to: 20 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_15MS bound to: 20'b00000000000000000001 
+	Parameter CLOCK_CYCLES_FOR_2MS bound to: 100000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_2MS bound to: 17 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_2MS bound to: 17'b00000000000000001 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_INITIATE_COMMUNICATION bound to: 3'b001 
+	Parameter PS2_STATE_2_WAIT_FOR_CLOCK bound to: 3'b010 
+	Parameter PS2_STATE_3_TRANSMIT_DATA bound to: 3'b011 
+	Parameter PS2_STATE_4_TRANSMIT_STOP_BIT bound to: 3'b100 
+	Parameter PS2_STATE_5_RECEIVE_ACK_BIT bound to: 3'b101 
+	Parameter PS2_STATE_6_COMMAND_WAS_SENT bound to: 3'b110 
+	Parameter PS2_STATE_7_TRANSMISSION_ERROR bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:125]
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Command_Out' (10#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PS2_Controller' (11#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+INFO: [Synth 8-256] done synthesizing module 'PS2' (12#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+INFO: [Synth 8-638] synthesizing module 'Left_Right' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+	Parameter KEY_LEFT bound to: 57451 - type: integer 
+	Parameter KEY_RIGHT bound to: 57460 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Left_Right' (13#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'Key_code' does not match port width (16) of module 'Left_Right' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:40]
+INFO: [Synth 8-638] synthesizing module 'New_Brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+	Parameter BRICK_TYPE_0 bound to: 16'b1000111000000000 
+	Parameter BRICK_TYPE_1 bound to: 16'b1100100010000000 
+	Parameter BRICK_TYPE_2 bound to: 16'b1100110000000000 
+	Parameter BRICK_TYPE_3 bound to: 16'b1000000000000000 
+	Parameter BRICK_TYPE_4 bound to: 16'b1000100010001000 
+	Parameter BRICK_TYPE_5 bound to: 16'b1111000000000000 
+INFO: [Synth 8-256] done synthesizing module 'New_Brick' (14#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+INFO: [Synth 8-638] synthesizing module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Logic' (15#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (16#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+WARNING: [Synth 8-567] referenced signal 'Old_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+WARNING: [Synth 8-567] referenced signal 'New_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+INFO: [Synth 8-256] done synthesizing module 'CORE' (17#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+WARNING: [Synth 8-689] width (9) of port connection 'Old_brick_tab' does not match port width (450) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:80]
+WARNING: [Synth 8-689] width (9) of port connection 'New_brick_tab' does not match port width (450) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:81]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+	Parameter HORTOTAL bound to: 1056 - type: integer 
+	Parameter HORBLANKSTART bound to: 800 - type: integer 
+	Parameter HORSYNCSTART bound to: 840 - type: integer 
+	Parameter HORSYNCSTOP bound to: 968 - type: integer 
+	Parameter VERTOTAL bound to: 628 - type: integer 
+	Parameter VERBLANKSTART bound to: 600 - type: integer 
+	Parameter VERSYNCSTART bound to: 601 - type: integer 
+	Parameter VERSYNCSTOP bound to: 605 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (18#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (19#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'Old_brick_tab' does not match port width (450) of module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:52]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:71]
+INFO: [Synth 8-638] synthesizing module 'draw_new_brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_new_brick' (20#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+WARNING: [Synth 8-3848] Net hblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:32]
+WARNING: [Synth 8-3848] Net vblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:33]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (21#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+WARNING: [Synth 8-567] referenced signal 'h_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Red_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Blue_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Green_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'h_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (22#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-3331] design draw_new_brick has unconnected port vblnk_in
+WARNING: [Synth 8-3331] design VGA has unconnected port hblnk_out
+WARNING: [Synth 8-3331] design VGA has unconnected port vblnk_out
+WARNING: [Synth 8-3331] design Altera_UP_PS2_Data_In has unconnected port ps2_clk_negedge
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:18 ; elapsed = 00:38:36 . Memory (MB): peak = 1312.215 ; gain = 1105.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_10kHz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_2Hz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:18 ; elapsed = 00:38:37 . Memory (MB): peak = 1312.215 ; gain = 1105.340
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Finished Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1390.672 ; gain = 109.527
+refresh_design
+WARNING: [Synth 8-976] clk_clk_wiz_0 has already been declared [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+WARNING: [Synth 8-2654] second declaration of clk_clk_wiz_0 ignored [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+INFO: [Synth 8-994] clk_clk_wiz_0 is declared here [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:02 ; elapsed = 00:43:13 . Memory (MB): peak = 1390.672 ; gain = 1183.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (4#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (5#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (6#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (7#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 2000 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 5000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_10kHz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 1 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_2Hz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+INFO: [Synth 8-638] synthesizing module 'PS2' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'PS2_Controller' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+	Parameter INITIALIZE_MOUSE bound to: 0 - type: integer 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_DATA_IN bound to: 3'b001 
+	Parameter PS2_STATE_2_COMMAND_OUT bound to: 3'b010 
+	Parameter PS2_STATE_3_END_TRANSFER bound to: 3'b011 
+	Parameter PS2_STATE_4_END_DELAYED bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Data_In' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_WAIT_FOR_DATA bound to: 3'b001 
+	Parameter PS2_STATE_2_DATA_IN bound to: 3'b010 
+	Parameter PS2_STATE_3_PARITY_IN bound to: 3'b011 
+	Parameter PS2_STATE_4_STOP_IN bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Data_In' (9#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Command_Out' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+	Parameter CLOCK_CYCLES_FOR_101US bound to: 5050 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_101US bound to: 13 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_101US bound to: 13'b0000000000001 
+	Parameter CLOCK_CYCLES_FOR_15MS bound to: 750000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_15MS bound to: 20 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_15MS bound to: 20'b00000000000000000001 
+	Parameter CLOCK_CYCLES_FOR_2MS bound to: 100000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_2MS bound to: 17 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_2MS bound to: 17'b00000000000000001 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_INITIATE_COMMUNICATION bound to: 3'b001 
+	Parameter PS2_STATE_2_WAIT_FOR_CLOCK bound to: 3'b010 
+	Parameter PS2_STATE_3_TRANSMIT_DATA bound to: 3'b011 
+	Parameter PS2_STATE_4_TRANSMIT_STOP_BIT bound to: 3'b100 
+	Parameter PS2_STATE_5_RECEIVE_ACK_BIT bound to: 3'b101 
+	Parameter PS2_STATE_6_COMMAND_WAS_SENT bound to: 3'b110 
+	Parameter PS2_STATE_7_TRANSMISSION_ERROR bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:125]
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Command_Out' (10#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PS2_Controller' (11#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+INFO: [Synth 8-256] done synthesizing module 'PS2' (12#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+INFO: [Synth 8-638] synthesizing module 'Left_Right' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+	Parameter KEY_LEFT bound to: 57451 - type: integer 
+	Parameter KEY_RIGHT bound to: 57460 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Left_Right' (13#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+INFO: [Synth 8-638] synthesizing module 'New_Brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+	Parameter BRICK_TYPE_0 bound to: 16'b1000111000000000 
+	Parameter BRICK_TYPE_1 bound to: 16'b1100100010000000 
+	Parameter BRICK_TYPE_2 bound to: 16'b1100110000000000 
+	Parameter BRICK_TYPE_3 bound to: 16'b1000000000000000 
+	Parameter BRICK_TYPE_4 bound to: 16'b1000100010001000 
+	Parameter BRICK_TYPE_5 bound to: 16'b1111000000000000 
+INFO: [Synth 8-256] done synthesizing module 'New_Brick' (14#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+INFO: [Synth 8-638] synthesizing module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Logic' (15#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (16#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+WARNING: [Synth 8-567] referenced signal 'Old_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+WARNING: [Synth 8-567] referenced signal 'New_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+INFO: [Synth 8-256] done synthesizing module 'CORE' (17#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+WARNING: [Synth 8-689] width (8) of port connection 'Key_code' does not match port width (16) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:79]
+WARNING: [Synth 8-689] width (9) of port connection 'Old_brick_tab' does not match port width (450) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:80]
+WARNING: [Synth 8-689] width (9) of port connection 'New_brick_tab' does not match port width (450) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:81]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+	Parameter HORTOTAL bound to: 1056 - type: integer 
+	Parameter HORBLANKSTART bound to: 800 - type: integer 
+	Parameter HORSYNCSTART bound to: 840 - type: integer 
+	Parameter HORSYNCSTOP bound to: 968 - type: integer 
+	Parameter VERTOTAL bound to: 628 - type: integer 
+	Parameter VERBLANKSTART bound to: 600 - type: integer 
+	Parameter VERSYNCSTART bound to: 601 - type: integer 
+	Parameter VERSYNCSTOP bound to: 605 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (18#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (19#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'Old_brick_tab' does not match port width (450) of module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:52]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:71]
+INFO: [Synth 8-638] synthesizing module 'draw_new_brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_new_brick' (20#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+WARNING: [Synth 8-3848] Net hblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:32]
+WARNING: [Synth 8-3848] Net vblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:33]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (21#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+WARNING: [Synth 8-567] referenced signal 'h_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Red_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Blue_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Green_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'h_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (22#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-3331] design draw_new_brick has unconnected port vblnk_in
+WARNING: [Synth 8-3331] design VGA has unconnected port hblnk_out
+WARNING: [Synth 8-3331] design VGA has unconnected port vblnk_out
+WARNING: [Synth 8-3331] design Altera_UP_PS2_Data_In has unconnected port ps2_clk_negedge
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:07 ; elapsed = 00:43:18 . Memory (MB): peak = 1390.672 ; gain = 1183.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_10kHz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_2Hz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:08 ; elapsed = 00:43:18 . Memory (MB): peak = 1390.672 ; gain = 1183.797
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Finished Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1404.453 ; gain = 13.781
+refresh_design
+WARNING: [Synth 8-976] clk_clk_wiz_0 has already been declared [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+WARNING: [Synth 8-2654] second declaration of clk_clk_wiz_0 ignored [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+INFO: [Synth 8-994] clk_clk_wiz_0 is declared here [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:37 ; elapsed = 00:44:30 . Memory (MB): peak = 1404.453 ; gain = 1197.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (4#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (5#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (6#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (7#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 2000 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 5000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_10kHz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 1 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_2Hz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+INFO: [Synth 8-638] synthesizing module 'PS2' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'PS2_Controller' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+	Parameter INITIALIZE_MOUSE bound to: 0 - type: integer 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_DATA_IN bound to: 3'b001 
+	Parameter PS2_STATE_2_COMMAND_OUT bound to: 3'b010 
+	Parameter PS2_STATE_3_END_TRANSFER bound to: 3'b011 
+	Parameter PS2_STATE_4_END_DELAYED bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Data_In' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_WAIT_FOR_DATA bound to: 3'b001 
+	Parameter PS2_STATE_2_DATA_IN bound to: 3'b010 
+	Parameter PS2_STATE_3_PARITY_IN bound to: 3'b011 
+	Parameter PS2_STATE_4_STOP_IN bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Data_In' (9#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Command_Out' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+	Parameter CLOCK_CYCLES_FOR_101US bound to: 5050 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_101US bound to: 13 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_101US bound to: 13'b0000000000001 
+	Parameter CLOCK_CYCLES_FOR_15MS bound to: 750000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_15MS bound to: 20 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_15MS bound to: 20'b00000000000000000001 
+	Parameter CLOCK_CYCLES_FOR_2MS bound to: 100000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_2MS bound to: 17 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_2MS bound to: 17'b00000000000000001 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_INITIATE_COMMUNICATION bound to: 3'b001 
+	Parameter PS2_STATE_2_WAIT_FOR_CLOCK bound to: 3'b010 
+	Parameter PS2_STATE_3_TRANSMIT_DATA bound to: 3'b011 
+	Parameter PS2_STATE_4_TRANSMIT_STOP_BIT bound to: 3'b100 
+	Parameter PS2_STATE_5_RECEIVE_ACK_BIT bound to: 3'b101 
+	Parameter PS2_STATE_6_COMMAND_WAS_SENT bound to: 3'b110 
+	Parameter PS2_STATE_7_TRANSMISSION_ERROR bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:125]
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Command_Out' (10#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PS2_Controller' (11#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+INFO: [Synth 8-256] done synthesizing module 'PS2' (12#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+WARNING: [Synth 8-689] width (8) of port connection 'Key_code' does not match port width (16) of module 'PS2' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:72]
+INFO: [Synth 8-638] synthesizing module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+INFO: [Synth 8-638] synthesizing module 'Left_Right' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+	Parameter KEY_LEFT bound to: 57451 - type: integer 
+	Parameter KEY_RIGHT bound to: 57460 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Left_Right' (13#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+INFO: [Synth 8-638] synthesizing module 'New_Brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+	Parameter BRICK_TYPE_0 bound to: 16'b1000111000000000 
+	Parameter BRICK_TYPE_1 bound to: 16'b1100100010000000 
+	Parameter BRICK_TYPE_2 bound to: 16'b1100110000000000 
+	Parameter BRICK_TYPE_3 bound to: 16'b1000000000000000 
+	Parameter BRICK_TYPE_4 bound to: 16'b1000100010001000 
+	Parameter BRICK_TYPE_5 bound to: 16'b1111000000000000 
+INFO: [Synth 8-256] done synthesizing module 'New_Brick' (14#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+INFO: [Synth 8-638] synthesizing module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Logic' (15#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (16#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+WARNING: [Synth 8-567] referenced signal 'Old_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+WARNING: [Synth 8-567] referenced signal 'New_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+INFO: [Synth 8-256] done synthesizing module 'CORE' (17#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+WARNING: [Synth 8-689] width (8) of port connection 'Key_code' does not match port width (16) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:79]
+WARNING: [Synth 8-689] width (9) of port connection 'Old_brick_tab' does not match port width (450) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:80]
+WARNING: [Synth 8-689] width (9) of port connection 'New_brick_tab' does not match port width (450) of module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:81]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+	Parameter HORTOTAL bound to: 1056 - type: integer 
+	Parameter HORBLANKSTART bound to: 800 - type: integer 
+	Parameter HORSYNCSTART bound to: 840 - type: integer 
+	Parameter HORSYNCSTOP bound to: 968 - type: integer 
+	Parameter VERTOTAL bound to: 628 - type: integer 
+	Parameter VERBLANKSTART bound to: 600 - type: integer 
+	Parameter VERSYNCSTART bound to: 601 - type: integer 
+	Parameter VERSYNCSTOP bound to: 605 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (18#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (19#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'Old_brick_tab' does not match port width (450) of module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:52]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:71]
+INFO: [Synth 8-638] synthesizing module 'draw_new_brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_new_brick' (20#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+WARNING: [Synth 8-3848] Net hblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:32]
+WARNING: [Synth 8-3848] Net vblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:33]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (21#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+WARNING: [Synth 8-567] referenced signal 'h_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Red_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Blue_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Green_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'h_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (22#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-3331] design draw_new_brick has unconnected port vblnk_in
+WARNING: [Synth 8-3331] design VGA has unconnected port hblnk_out
+WARNING: [Synth 8-3331] design VGA has unconnected port vblnk_out
+WARNING: [Synth 8-3331] design Altera_UP_PS2_Data_In has unconnected port ps2_clk_negedge
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:41 ; elapsed = 00:44:35 . Memory (MB): peak = 1404.453 ; gain = 1197.578
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_10kHz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_2Hz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:42 ; elapsed = 00:44:36 . Memory (MB): peak = 1404.453 ; gain = 1197.578
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Finished Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1424.977 ; gain = 20.523
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183795574A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795574A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_design
+WARNING: [Synth 8-976] clk_clk_wiz_0 has already been declared [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+WARNING: [Synth 8-2654] second declaration of clk_clk_wiz_0 ignored [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+INFO: [Synth 8-994] clk_clk_wiz_0 is declared here [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:06:09 ; elapsed = 00:46:11 . Memory (MB): peak = 1424.977 ; gain = 1218.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (4#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (5#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (6#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (7#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 2000 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 5000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_10kHz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 1 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_2Hz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+INFO: [Synth 8-638] synthesizing module 'PS2' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'PS2_Controller' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+	Parameter INITIALIZE_MOUSE bound to: 0 - type: integer 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_DATA_IN bound to: 3'b001 
+	Parameter PS2_STATE_2_COMMAND_OUT bound to: 3'b010 
+	Parameter PS2_STATE_3_END_TRANSFER bound to: 3'b011 
+	Parameter PS2_STATE_4_END_DELAYED bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Data_In' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_WAIT_FOR_DATA bound to: 3'b001 
+	Parameter PS2_STATE_2_DATA_IN bound to: 3'b010 
+	Parameter PS2_STATE_3_PARITY_IN bound to: 3'b011 
+	Parameter PS2_STATE_4_STOP_IN bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Data_In' (9#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Command_Out' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+	Parameter CLOCK_CYCLES_FOR_101US bound to: 5050 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_101US bound to: 13 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_101US bound to: 13'b0000000000001 
+	Parameter CLOCK_CYCLES_FOR_15MS bound to: 750000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_15MS bound to: 20 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_15MS bound to: 20'b00000000000000000001 
+	Parameter CLOCK_CYCLES_FOR_2MS bound to: 100000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_2MS bound to: 17 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_2MS bound to: 17'b00000000000000001 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_INITIATE_COMMUNICATION bound to: 3'b001 
+	Parameter PS2_STATE_2_WAIT_FOR_CLOCK bound to: 3'b010 
+	Parameter PS2_STATE_3_TRANSMIT_DATA bound to: 3'b011 
+	Parameter PS2_STATE_4_TRANSMIT_STOP_BIT bound to: 3'b100 
+	Parameter PS2_STATE_5_RECEIVE_ACK_BIT bound to: 3'b101 
+	Parameter PS2_STATE_6_COMMAND_WAS_SENT bound to: 3'b110 
+	Parameter PS2_STATE_7_TRANSMISSION_ERROR bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:125]
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Command_Out' (10#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PS2_Controller' (11#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+INFO: [Synth 8-256] done synthesizing module 'PS2' (12#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+INFO: [Synth 8-638] synthesizing module 'Left_Right' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+	Parameter KEY_LEFT bound to: 57451 - type: integer 
+	Parameter KEY_RIGHT bound to: 57460 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Left_Right' (13#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+INFO: [Synth 8-638] synthesizing module 'New_Brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+	Parameter BRICK_TYPE_0 bound to: 16'b1000111000000000 
+	Parameter BRICK_TYPE_1 bound to: 16'b1100100010000000 
+	Parameter BRICK_TYPE_2 bound to: 16'b1100110000000000 
+	Parameter BRICK_TYPE_3 bound to: 16'b1000000000000000 
+	Parameter BRICK_TYPE_4 bound to: 16'b1000100010001000 
+	Parameter BRICK_TYPE_5 bound to: 16'b1111000000000000 
+INFO: [Synth 8-256] done synthesizing module 'New_Brick' (14#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+INFO: [Synth 8-638] synthesizing module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Logic' (15#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (16#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+WARNING: [Synth 8-567] referenced signal 'Old_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+WARNING: [Synth 8-567] referenced signal 'New_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+INFO: [Synth 8-256] done synthesizing module 'CORE' (17#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+	Parameter HORTOTAL bound to: 1056 - type: integer 
+	Parameter HORBLANKSTART bound to: 800 - type: integer 
+	Parameter HORSYNCSTART bound to: 840 - type: integer 
+	Parameter HORSYNCSTOP bound to: 968 - type: integer 
+	Parameter VERTOTAL bound to: 628 - type: integer 
+	Parameter VERBLANKSTART bound to: 600 - type: integer 
+	Parameter VERSYNCSTART bound to: 601 - type: integer 
+	Parameter VERSYNCSTOP bound to: 605 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (18#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (19#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'Old_brick_tab' does not match port width (450) of module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:52]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:71]
+INFO: [Synth 8-638] synthesizing module 'draw_new_brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_new_brick' (20#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+WARNING: [Synth 8-3848] Net hblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:32]
+WARNING: [Synth 8-3848] Net vblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:33]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (21#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+WARNING: [Synth 8-689] width (450) of port connection 'Old_brick_tab' does not match port width (9) of module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:86]
+WARNING: [Synth 8-689] width (450) of port connection 'New_brick_tab' does not match port width (9) of module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:87]
+WARNING: [Synth 8-567] referenced signal 'h_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Red_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Blue_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Green_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'h_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (22#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-3331] design draw_new_brick has unconnected port vblnk_in
+WARNING: [Synth 8-3331] design VGA has unconnected port hblnk_out
+WARNING: [Synth 8-3331] design VGA has unconnected port vblnk_out
+WARNING: [Synth 8-3331] design Altera_UP_PS2_Data_In has unconnected port ps2_clk_negedge
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:06:14 ; elapsed = 00:46:16 . Memory (MB): peak = 1424.977 ; gain = 1218.102
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_10kHz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_2Hz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:06:15 ; elapsed = 00:46:17 . Memory (MB): peak = 1424.977 ; gain = 1218.102
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Finished Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1431.063 ; gain = 6.086
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jun 02 16:29:56 2017] Launched synth_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/synth_1/runme.log
+[Fri Jun 02 16:29:56 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_design
+WARNING: [Synth 8-976] clk_clk_wiz_0 has already been declared [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+WARNING: [Synth 8-2654] second declaration of clk_clk_wiz_0 ignored [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:98]
+INFO: [Synth 8-994] clk_clk_wiz_0 is declared here [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:07:03 ; elapsed = 00:53:16 . Memory (MB): peak = 1431.063 ; gain = 1224.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:125]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:128]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 25 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (4#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (5#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (6#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (7#1) [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:71]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 2000 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 5000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_10kHz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+	Parameter divider bound to: 1 - type: integer 
+	Parameter LOOP_COUNTER_AT bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (8#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/project_stopwatch_start/clk_divider.v:15]
+WARNING: [Synth 8-350] instance 'my_clk_divider_2Hz' of module 'clk_divider' requires 3 connections, but only 2 given [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+INFO: [Synth 8-638] synthesizing module 'PS2' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'PS2_Controller' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+	Parameter INITIALIZE_MOUSE bound to: 0 - type: integer 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_DATA_IN bound to: 3'b001 
+	Parameter PS2_STATE_2_COMMAND_OUT bound to: 3'b010 
+	Parameter PS2_STATE_3_END_TRANSFER bound to: 3'b011 
+	Parameter PS2_STATE_4_END_DELAYED bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Data_In' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_WAIT_FOR_DATA bound to: 3'b001 
+	Parameter PS2_STATE_2_DATA_IN bound to: 3'b010 
+	Parameter PS2_STATE_3_PARITY_IN bound to: 3'b011 
+	Parameter PS2_STATE_4_STOP_IN bound to: 3'b100 
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Data_In' (9#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Data_In.v:10]
+INFO: [Synth 8-638] synthesizing module 'Altera_UP_PS2_Command_Out' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+	Parameter CLOCK_CYCLES_FOR_101US bound to: 5050 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_101US bound to: 13 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_101US bound to: 13'b0000000000001 
+	Parameter CLOCK_CYCLES_FOR_15MS bound to: 750000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_15MS bound to: 20 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_15MS bound to: 20'b00000000000000000001 
+	Parameter CLOCK_CYCLES_FOR_2MS bound to: 100000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_2MS bound to: 17 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_2MS bound to: 17'b00000000000000001 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_INITIATE_COMMUNICATION bound to: 3'b001 
+	Parameter PS2_STATE_2_WAIT_FOR_CLOCK bound to: 3'b010 
+	Parameter PS2_STATE_3_TRANSMIT_DATA bound to: 3'b011 
+	Parameter PS2_STATE_4_TRANSMIT_STOP_BIT bound to: 3'b100 
+	Parameter PS2_STATE_5_RECEIVE_ACK_BIT bound to: 3'b101 
+	Parameter PS2_STATE_6_COMMAND_WAS_SENT bound to: 3'b110 
+	Parameter PS2_STATE_7_TRANSMISSION_ERROR bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:125]
+INFO: [Synth 8-256] done synthesizing module 'Altera_UP_PS2_Command_Out' (10#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/Altera_UP_PS2_Command_Out.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PS2_Controller' (11#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/imports/Tetris/PS2_Controller.v:9]
+INFO: [Synth 8-256] done synthesizing module 'PS2' (12#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/PS2.v:24]
+INFO: [Synth 8-638] synthesizing module 'CORE' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+INFO: [Synth 8-638] synthesizing module 'Left_Right' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+	Parameter KEY_LEFT bound to: 57451 - type: integer 
+	Parameter KEY_RIGHT bound to: 57460 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Left_Right' (13#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Left_Right.v:23]
+INFO: [Synth 8-638] synthesizing module 'New_Brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+	Parameter BRICK_TYPE_0 bound to: 16'b1000111000000000 
+	Parameter BRICK_TYPE_1 bound to: 16'b1100100010000000 
+	Parameter BRICK_TYPE_2 bound to: 16'b1100110000000000 
+	Parameter BRICK_TYPE_3 bound to: 16'b1000000000000000 
+	Parameter BRICK_TYPE_4 bound to: 16'b1000100010001000 
+	Parameter BRICK_TYPE_5 bound to: 16'b1111000000000000 
+INFO: [Synth 8-256] done synthesizing module 'New_Brick' (14#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/New_Brick.v:23]
+INFO: [Synth 8-638] synthesizing module 'Logic' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Logic' (15#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Logic.v:23]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (16#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/Memory.v:23]
+WARNING: [Synth 8-567] referenced signal 'Old_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+WARNING: [Synth 8-567] referenced signal 'New_brick_tab_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:67]
+INFO: [Synth 8-256] done synthesizing module 'CORE' (17#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/CORE.v:24]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'vga_timing' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+	Parameter HORTOTAL bound to: 1056 - type: integer 
+	Parameter HORBLANKSTART bound to: 800 - type: integer 
+	Parameter HORSYNCSTART bound to: 840 - type: integer 
+	Parameter HORSYNCSTOP bound to: 968 - type: integer 
+	Parameter VERTOTAL bound to: 628 - type: integer 
+	Parameter VERBLANKSTART bound to: 600 - type: integer 
+	Parameter VERSYNCSTART bound to: 601 - type: integer 
+	Parameter VERSYNCSTOP bound to: 605 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_timing' (18#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_timing.v:6]
+INFO: [Synth 8-638] synthesizing module 'draw_background' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_background' (19#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/vga_background.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:71]
+INFO: [Synth 8-638] synthesizing module 'draw_new_brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+INFO: [Synth 8-256] done synthesizing module 'draw_new_brick' (20#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/draw_new_brick.v:23]
+WARNING: [Synth 8-689] width (450) of port connection 'New_brick_tab' does not match port width (9) of module 'draw_new_brick' [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:72]
+WARNING: [Synth 8-3848] Net hblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:32]
+WARNING: [Synth 8-3848] Net vblnk_out in module/entity VGA does not have driver. [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:33]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (21#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/VGA.v:23]
+WARNING: [Synth 8-567] referenced signal 'h_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_sync_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Red_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Blue_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'Green_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'h_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-567] referenced signal 'v_blnk_nxt' should be on the sensitivity list [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:97]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (22#1) [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:23]
+WARNING: [Synth 8-3331] design draw_new_brick has unconnected port vblnk_in
+WARNING: [Synth 8-3331] design VGA has unconnected port hblnk_out
+WARNING: [Synth 8-3331] design VGA has unconnected port vblnk_out
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[449]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[448]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[447]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[446]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[445]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[444]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[443]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[442]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[441]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[440]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[439]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[438]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[437]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[436]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[435]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[434]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[433]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[432]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[431]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[430]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[429]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[428]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[427]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[426]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[425]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[424]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[423]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[422]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[421]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[420]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[419]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[418]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[417]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[416]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[415]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[414]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[413]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[412]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[411]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[410]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[409]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[408]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[407]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[406]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[405]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[404]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[403]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[402]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[401]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[400]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[399]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[398]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[397]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[396]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[395]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[394]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[393]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[392]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[391]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[390]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[389]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[388]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[387]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[386]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[385]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[384]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[383]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[382]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[381]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[380]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[379]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[378]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[377]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[376]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[375]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[374]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[373]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[372]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[371]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[370]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[369]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[368]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[367]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[366]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[365]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[364]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[363]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[362]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[361]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[360]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[359]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[358]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[357]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[356]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[355]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[354]
+WARNING: [Synth 8-3331] design VGA has unconnected port New_brick_tab[353]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:07:07 ; elapsed = 00:53:20 . Memory (MB): peak = 1431.063 ; gain = 1224.188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_10kHz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:52]
+WARNING: [Synth 8-3295] tying undriven pin my_clk_divider_2Hz:rst to constant 0 [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/new/TOP.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:07:08 ; elapsed = 00:53:21 . Memory (MB): peak = 1431.063 ; gain = 1224.188
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'my_clk_wiz/inst'
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'my_clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Finished Parsing XDC File [C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/constrs_1/tetris_constraints.xdc]
+Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'my_clk_wiz/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1443.520 ; gain = 12.457
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jun 02 16:36:45 2017] Launched synth_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/synth_1/runme.log
+[Fri Jun 02 16:36:45 2017] Launched impl_1...
+Run output will be captured here: C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/mdutk/Desktop/ProjektCyfrowka/Tetris/Tetris.runs/impl_1/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 02 16:41:26 2017...
