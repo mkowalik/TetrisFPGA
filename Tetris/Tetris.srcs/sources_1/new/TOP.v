@@ -30,7 +30,11 @@ module TOP (
     output reg  [3:0]   b,
     output reg  [3:0]   g,
     output reg          h_blnk,
-    output reg          v_blnk
+    output reg          v_blnk,
+    output wire [6:0]   seg,    // segments (active LOW)
+    output wire         dp,     // dot in segment display (active LOW)
+    output wire [3:0]   an,      // anode enable (active LOW)
+    output wire [1:0]   led
     );
     
     wire        clk_down, clk_10kHz, clk_40MHz, clk_100MHz;
@@ -50,6 +54,7 @@ module TOP (
     );
     
     clk_divider my_clk_divider_10kHz(
+        .rst(1'b0),
         .clk100MHz(clk_100MHz),
         .clk_div(clk_10kHz)
     );
@@ -59,6 +64,7 @@ module TOP (
         .divider(1) 
     )
      my_clk_divider_2Hz (
+        .rst(1'b0),
         .clk100MHz(clk_100MHz),
         .clk_div(clk_down)
      );
@@ -72,7 +78,7 @@ module TOP (
         .Key_code(Key_code)
     );
     
-    CORE my_CORE(
+    /*CORE my_CORE(
         .clk_down(clk_down),
         .clk_100MHz(clk_100MHz),
         .Key_pressed(Key_pressed),
@@ -104,5 +110,26 @@ module TOP (
             h_blnk <=   h_blnk_nxt;
             v_blnk <=   v_blnk_nxt;
         end
+        */
+            
+    disp_hex_mux my_disp_hex_mux (
+     .clk(clk_100MHz), 
+     .reset(1'b0),
+     .hex3(Key_code[15:12]), 
+     .hex2(Key_code[11:8]), 
+     .hex1(Key_code[7:4]),
+     .hex0(Key_code[3:0]),
+     .dp_in(4'b1011),
+     .an(an),
+     .sseg({dp, seg})
+    );
+        
+    reg led1_temp = 1'b0;
+    assign led[1] = led1_temp;
+    assign led[0] = Key_pressed;
+        
+    always @(posedge Key_pressed) begin
+        led1_temp = ~led1_temp;
+    end
     
 endmodule

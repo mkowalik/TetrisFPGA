@@ -25,28 +25,17 @@ module PS2(
     input wire           clk_100MHz,
     input wire           Keyboard_data,
     input wire           Keyboard_clk,
-    output reg           Key_pressed,
-    output reg [15:0]    Key_code   //TODO change for [15:0]
+    output wire          Key_pressed,
+    output wire [15:0]   Key_code
     );
     
     reg clk_50MHz = 1'b0;
     
-    reg                 Key_pressed_nxt;
-    reg [7:0]           Key_code_nxt;
-    
-    wire                 __Key_pressed;
-    wire [7:0]           __Key_code;
-    
-    always @(posedge clk_100MHz) begin
-        clk_50MHz <= ~clk_50MHz;
-        Key_pressed <= Key_pressed_nxt;
-        Key_code <= Key_code_nxt;
-    end
-    
-    always @* begin
-        Key_pressed_nxt = __Key_pressed;
-        Key_code_nxt = __Key_code;
-    end
+    wire                key_pressed_signal;
+    wire [7:0]          key_code_inner;
+        
+    reg                 key_pressed_signal_nxt;
+    reg [7:0]           key_code_inner_nxt;
     
     PS2_Controller my_PS2_Controller(
         .CLOCK_50(clk_50MHz),
@@ -61,8 +50,45 @@ module PS2(
         .command_was_sent(),
         .error_communication_timed_out(),
     
-        .received_data(__Key_code),
-        .received_data_en(__Key_pressed)    
+        .received_data(key_code_inner),
+        .received_data_en(key_pressed_signal)    
     );
+    
+    reg [7:0]   last_byte;
+    reg [7:0]   previous_byte;
+    
+    reg [7:0]   last_byte_nxt;
+    reg [7:0]   previous_byte_nxt;
+    
+    reg         key_read;
+    reg         key_read_nxt;
+    
+    assign Key_code[15:8] = previous_byte;
+    assign Key_code[7:0]  = last_byte;
+    
+    assign Key_pressed    = key_pressed_signal;
+    
+    always @* begin
+        last_byte_nxt = last_byte;
+        previous_byte_nxt = previous_byte;
+        key_read_nxt = key_read;
+        case ({key_pressed_signal, key_read})
+            2'b10: begin
+                last_byte_nxt = key_code_inner;
+                previous_byte_nxt = last_byte;
+                key_read_nxt = 1'b1;
+            end
+            2'b01: begin
+                key_read_nxt = 1'b0;
+            end
+        endcase
+    end
+    
+    always @(posedge clk_100MHz) begin
+        clk_50MHz <= ~clk_50MHz;
+        last_byte <= last_byte_nxt;
+        previous_byte <= previous_byte_nxt;
+        key_read <= key_read_nxt;
+    end
     
 endmodule

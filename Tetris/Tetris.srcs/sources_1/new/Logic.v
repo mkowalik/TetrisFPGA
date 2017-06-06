@@ -31,9 +31,11 @@ module Logic(
     
     
     
-    /*
-    always @ *
-        begin
+    
+    always @* begin
+        Tab_save = 449'b0;
+        New_brick = 1'b0;
+        /*begin
             log_tab = Old_brick_tab << 25; // ??
             if ( (New_brick_tab | log_tab) == 1)
                 begin
@@ -49,7 +51,7 @@ module Logic(
         end
 
     */
-    
+    end
     
     
 endmodule

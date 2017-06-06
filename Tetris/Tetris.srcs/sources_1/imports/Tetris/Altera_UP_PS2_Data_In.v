@@ -16,7 +16,7 @@ module Altera_UP_PS2_Data_In (
 	start_receiving_data,
 
 	ps2_clk_posedge,
-	ps2_clk_negedge,
+//	ps2_clk_negedge,
 	ps2_data,
 
 	// Bidirectionals
@@ -43,7 +43,7 @@ input				wait_for_incoming_data;
 input				start_receiving_data;
 
 input				ps2_clk_posedge;
-input				ps2_clk_negedge;
+//input				ps2_clk_negedge;
 input			 	ps2_data;
 
 // Bidirectionals
