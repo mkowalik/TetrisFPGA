@@ -27,7 +27,7 @@ module Left_Right(
     output wire         Right
     );
     
-    localparam      KEY_LEFT    = 'hE06B,
+    localparam      KEY_LEFT    = 'h006B,
                     KEY_RIGHT   = 'hE074;
     
     reg Left_nxt, Right_nxt;

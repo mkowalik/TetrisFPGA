@@ -52,6 +52,7 @@ module CORE(
     );
     
     Logic my_Logic(
+        .clk_down(clk_down),
         .New_brick_tab(New_brick_tab_nxt),
         .Old_brick_tab(Old_brick_tab_nxt),
         .Tab_save(Tab_save),
@@ -59,6 +60,7 @@ module CORE(
     );
     
     Memory my_Memory(
+        .clk_down(clk_down),
         .New_brick_signal(new_brick_signal),
         .Tab_save(Tab_save),
         .Old_brick_tab(Old_brick_tab_nxt)

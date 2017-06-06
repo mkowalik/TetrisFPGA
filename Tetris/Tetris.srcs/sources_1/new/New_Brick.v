@@ -140,11 +140,6 @@ module New_Brick(
         new_brick_done <= new_brick_done_nxt;
     end
     
-    
-        
-        
-    
-        
         
         
     

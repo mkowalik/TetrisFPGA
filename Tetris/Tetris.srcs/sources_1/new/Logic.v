@@ -21,37 +21,35 @@
 //Testowy komentarz
 
 module Logic(
+    input wire            clk_down,
     input wire  [449:0]   New_brick_tab,
     input wire  [449:0]   Old_brick_tab,
     output reg  [449:0]   Tab_save,
     output reg            New_brick
     );
     
-    reg [449:0] log_tab;
+    reg [449:0] or_tab, and_tab;
+    reg New_brick_nxt;
     
-    
-    
-    
-    always @* begin
-        Tab_save = 449'b0;
-        New_brick = 1'b0;
-        /*begin
-            log_tab = Old_brick_tab << 25; // ??
-            if ( (New_brick_tab | log_tab) == 1)
-                begin
-                    New_brick = 'b1;
-                    Tab_save = (New_brick_tab | Old_brick_tab);
-                  //  if ( (New_brick_tab | Old_brick_tab) ==  ) // ??
-                end
-            else 
-                begin
-                    New_brick = 'b0;
-                    Tab_save = Old_brick_tab;
-                end
+    /*assign New_brick = 1;
+    assign Tab_save  = New_brick_tab; */
+ 
+    always @ *
+        begin
+            and_tab = New_brick_tab & Old_brick_tab;
+            New_brick_nxt = 1'b1;
+            or_tab = New_brick_tab | Old_brick_tab;
         end
-
-    */
-    end
-    
-    
+        
+    always @ (posedge clk_down)
+        begin
+            if (and_tab == 449'b0)
+                New_brick <= 1'b1;
+            else
+                New_brick <= 1'b0;
+                
+            Tab_save  <= or_tab;
+        end
+        
+        
 endmodule

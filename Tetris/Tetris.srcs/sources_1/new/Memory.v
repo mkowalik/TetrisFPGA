@@ -21,9 +21,12 @@
 
 
 module Memory(
-    input   wire          New_brick_signal,
+
+    input   wire            clk_down,
+    input   wire            New_brick_signal,
     input   wire [449:0]    Tab_save,
-    output  wire [449:0]    Old_brick_tab
+    output  reg  [449:0]    Old_brick_tab
+    
     );
     
     reg [449:0] Old_brick_tab_nxt;
@@ -32,9 +35,11 @@ module Memory(
         if(New_brick_signal)
             Old_brick_tab_nxt = Tab_save;
         else    
-            Old_brick_tab_nxt = Old_brick_tab;
+            Old_brick_tab_nxt = Old_brick_tab; 
             
-    assign  Old_brick_tab = Old_brick_tab_nxt;  
+    always @ (posedge clk_down)
+    
+          Old_brick_tab <= Old_brick_tab_nxt;  
     
     
 endmodule
