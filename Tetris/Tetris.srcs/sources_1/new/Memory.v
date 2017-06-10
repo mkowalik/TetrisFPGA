@@ -22,11 +22,12 @@
 
 module Memory(
 
-    input   wire            clk_down,
+    input   wire            clk_100MHz,
     input   wire            New_brick_signal,
     input   wire [449:0]    Tab_save,
-    output  reg  [449:0]    Old_brick_tab
-    
+    input   wire [449:0]    New_brick_tab_in,
+    output  reg  [449:0]    Old_brick_tab,
+    output  reg  [449:0]    New_brick_tab_out
     );
     
     reg [449:0] Old_brick_tab_nxt;
@@ -37,9 +38,12 @@ module Memory(
         else    
             Old_brick_tab_nxt = Old_brick_tab; 
             
-    always @ (posedge clk_down)
+    always @ (posedge clk_100MHz) begin
     
-          Old_brick_tab <= Old_brick_tab_nxt;  
+        Old_brick_tab <= Old_brick_tab_nxt;
+        New_brick_tab_out <= New_brick_tab_in;
+          
+    end
     
     
 endmodule

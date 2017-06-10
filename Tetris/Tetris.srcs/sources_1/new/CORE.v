@@ -26,14 +26,14 @@ module CORE(
     input wire           clk_100MHz,
     input wire           Key_pressed,
     input wire [15:0]    Key_code,  //TODO change for [15:0]
-    output wire [449:0]   Old_brick_tab,
-    output wire [449:0]   New_brick_tab,
+    output wire [449:0]  Old_brick_tab,
+    output wire [449:0]  New_brick_tab,
     input wire           btnU
     );
     
     wire            left, right; 
-    wire            new_brick_signal;
-    wire [449:0]    Tab_save;
+    wire            Tab_save_signal;
+    wire [449:0]    New_brick_tab_brick, New_brick_tab_logic, Tab_save_tab;
     
     
     Left_Right  my_Left_Right(
@@ -50,25 +50,27 @@ module CORE(
         .right(right),
 //        .new_brick_signal(new_brick_signal),
         .new_brick_signal(btnU),
-        .brick_tab(New_brick_tab)
+        .brick_tab(New_brick_tab_brick)
     );
     
-    /*
     Logic my_Logic(
-        .clk_down(clk_down),
-        .New_brick_tab(New_brick_tab),
-        .Old_brick_tab(Old_brick_tab),
-        .Tab_save(Tab_save),
-        .New_brick(new_brick_signal)
+        .clk_100MHz(clk_100MHz),
+        .New_brick_tab_in(New_brick_tab_brick),
+        .Old_brick_tab_in(Old_brick_tab),
+        .Tab_save_signal(Tab_save_signal),
+        .Tab_save_tab(Tab_save_tab),
+        .New_brick_tab_out(New_brick_tab_logic)
     );
     
     
     Memory my_Memory(
-        .clk_down(clk_down),
-        .New_brick_signal(new_brick_signal),
-        .Tab_save(Tab_save),
-        .Old_brick_tab(Old_brick_tab)
+        .clk_100MHz(clk_100MHz),
+        .New_brick_signal(Tab_save_signal),
+        .Tab_save(Tab_save_tab),
+        .New_brick_tab_in(New_brick_tab_logic),
+        .Old_brick_tab(Old_brick_tab),
+        .New_brick_tab_out(New_brick_tab)
     );
-    */
+    
     
 endmodule

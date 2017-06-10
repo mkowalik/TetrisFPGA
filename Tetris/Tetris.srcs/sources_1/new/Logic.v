@@ -21,35 +21,53 @@
 //Testowy komentarz
 
 module Logic(
-    input wire            clk_down,
-    input wire  [449:0]   New_brick_tab,
-    input wire  [449:0]   Old_brick_tab,
-    output reg  [449:0]   Tab_save,
-    output reg            New_brick
+    input wire            clk_100MHz,
+    input wire  [449:0]   New_brick_tab_in,
+    input wire  [449:0]   Old_brick_tab_in,
+    output reg  [449:0]   Tab_save_tab = 449'b0,
+    output reg            Tab_save_signal,
+    output reg [449:0]    New_brick_tab_out
     );
     
-    reg [449:0] or_tab, and_tab;
-    reg New_brick_nxt;
+    reg             Tab_save_signal_nxt;
+    reg [449:0]     Tab_save_tab_nxt;
     
-    /*assign New_brick = 1;
-    assign Tab_save  = New_brick_tab; */
- 
-    always @ *
-        begin
-            and_tab = New_brick_tab & Old_brick_tab;
-            New_brick_nxt = 1'b1;
-            or_tab = New_brick_tab | Old_brick_tab;
-        end
+    integer p, q;
+    integer index_up, index_down;
         
-    always @ (posedge clk_down)
-        begin
-            if (and_tab == 449'b0)
-                New_brick <= 1'b1;
-            else
-                New_brick <= 1'b0;
+    always @* begin
+        
+        Tab_save_signal_nxt = 1'b0;
+        Tab_save_tab_nxt = Tab_save_tab;
+    
+        for (p=0; p<18; p = p+1) begin
+            for (q=0; q<25; q = q+1) begin
+                if (p<17) begin
+                index_up = (p*25) + q;
+                index_down = ((p+1)*25) + q;
                 
-            Tab_save  <= or_tab;
+                if ((New_brick_tab_in[index_up] == 1) && (Old_brick_tab_in[index_down] == 1)) begin 
+                    Tab_save_signal_nxt = 1'b1;
+                    Tab_save_tab_nxt = New_brick_tab_in | Old_brick_tab_in;
+                end
+                
+                end else begin
+                    // p == 17     
+                    index_up = (p*25) + q;   
+                    if ( (New_brick_tab_in[index_up] == 1)) begin 
+                        Tab_save_signal_nxt = 1'b1;
+                        Tab_save_tab_nxt = New_brick_tab_in | Old_brick_tab_in;
+                    end
+                end
+            end 
         end
-        
+    end
+    
+    always @(posedge clk_100MHz) begin
+        Tab_save_signal = Tab_save_signal_nxt;
+        Tab_save_tab <= Tab_save_tab_nxt;
+        New_brick_tab_out <= New_brick_tab_in;
+    end
+    
         
 endmodule
