@@ -39,9 +39,9 @@ module draw_background(
     output reg [11:0] rgb_out
     );
     
-    reg [3:0] r;
-    reg [3:0] g;
-    reg [3:0] b;
+    reg [3:0] r = 4'b0;
+    reg [3:0] g = 4'b0;
+    reg [3:0] b = 4'b0;
     reg [449:0] Old_brick_tab_del;
     
     always @(posedge pclk_in)
@@ -59,22 +59,23 @@ module draw_background(
         
       always @ *
         begin
-            if (vblnk_in || hblnk_in) {r,g,b} <= 12'h0_0_0; 
+            {r,g,b} = 12'h0_0_0;
+            if (vblnk_in || hblnk_in) {r,g,b} = 12'h0_0_0; 
             else
             begin
                   // Active display, top edge, make a yellow line.
-                  if (vcount_in == 0) {r,g,b} <= 12'hf_f_0;
+                  if (vcount_in == 0) {r,g,b} = 12'hf_f_0;
                   // Active display, bottom edge, make a red line.
-                  else if (vcount_in == 575) {r,g,b} <= 12'hf_0_0;
+                  else if (vcount_in == 575) {r,g,b} = 12'hf_0_0;
                   // Active display, left edge, make a green line.
-                  else if (hcount_in ==0 ) {r,g,b} <= 12'h0_f_0;
+                  else if (hcount_in ==0 ) {r,g,b} = 12'h0_f_0;
                   // Active display, right edge, make a blue line.
-                  else if (hcount_in == 799) {r,g,b} <= 12'h0_0_f;
+                  else if (hcount_in == 799) {r,g,b} = 12'h0_0_f;
                   // Active display, interior, fill with gray.
                   // You will replace this with your own test.
                   else if (Old_brick_tab_del[((vcount_in/32)*25)+(hcount_in/32)])
-                    {r,g,b} <= 12'hf_0_f;
-                  else if (vcount_in > 575) {r,b,g} <= 12'h0_0_0;
+                    {r,g,b} = 12'hf_0_f;
+                  else if (vcount_in > 575) {r,b,g} = 12'h0_0_0;
               end
           end
 endmodule

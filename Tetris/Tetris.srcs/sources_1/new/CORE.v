@@ -26,13 +26,13 @@ module CORE(
     input wire           clk_100MHz,
     input wire           Key_pressed,
     input wire [15:0]    Key_code,  //TODO change for [15:0]
-    output reg [449:0]   Old_brick_tab,
-    output reg [449:0]   New_brick_tab
+    output wire [449:0]   Old_brick_tab,
+    output wire [449:0]   New_brick_tab
     );
     
     wire            left, right; 
     wire            new_brick_signal;
-    wire  [449:0]   Tab_save, Old_brick_tab_nxt, New_brick_tab_nxt;
+    wire [449:0]    Tab_save;
     
     
     Left_Right  my_Left_Right(
@@ -48,13 +48,13 @@ module CORE(
         .left(left),
         .right(right),
         .new_brick_signal(new_brick_signal),
-        .brick_tab(New_brick_tab_nxt)
+        .brick_tab(New_brick_tab)
     );
     
     Logic my_Logic(
         .clk_down(clk_down),
-        .New_brick_tab(New_brick_tab_nxt),
-        .Old_brick_tab(Old_brick_tab_nxt),
+        .New_brick_tab(New_brick_tab),
+        .Old_brick_tab(Old_brick_tab),
         .Tab_save(Tab_save),
         .New_brick(new_brick_signal)
     );
@@ -63,13 +63,7 @@ module CORE(
         .clk_down(clk_down),
         .New_brick_signal(new_brick_signal),
         .Tab_save(Tab_save),
-        .Old_brick_tab(Old_brick_tab_nxt)
+        .Old_brick_tab(Old_brick_tab)
     );
-    
-    always @ (clk_down)
-        begin
-            Old_brick_tab   <=  Old_brick_tab_nxt;
-            New_brick_tab   <=  New_brick_tab_nxt;
-        end
     
 endmodule

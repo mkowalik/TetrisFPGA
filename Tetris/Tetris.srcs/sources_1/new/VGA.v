@@ -35,7 +35,7 @@ module VGA(
     
     wire [10:0] vcount, hcount, vcount_bckg, hcount_bckg, vcount_char, hcount_char;
     wire        vsync, hsync, vblnk, hblnk, v_sync, h_sync, vsync_bckg, hsync_bckg, vblnk_bckg, hblnk_bckg;
-    wire        vsync_char, hsync_char, vblnk_char, hblnk_char;
+    wire        vsync_char, hsync_char, vblnk_char, hblnk_char, v_blnk, h_blnk;
     wire [11:0] rgb_out, rgb_bckg, rgb_char;
     wire [7:0]  char_pixels;
     wire [7:0]  char_xy;
@@ -96,7 +96,7 @@ module VGA(
     
     );
     
-    char_rom_16x16 my_char_rom_16x16(
+    char_rom_100x1 my_char_rom_100x1(
     
         .char_xy(char_xy),
         .char_code(char_code)
@@ -112,6 +112,8 @@ module VGA(
     
     );
     
+    
+    
     draw_new_brick my_draw_new_brick(
         .New_brick_tab(New_brick_tab),
         .rgb_in(rgb_char),
@@ -125,10 +127,10 @@ module VGA(
         
         .hcount_out(),
         .hsync_out(h_sync),
-        .hblnk_out(),
+        .hblnk_out(h_blnk),
         .vcount_out(),
         .vsync_out(v_sync),
-        .vblnk_out(),
+        .vblnk_out(v_blnk),
         .rgb_out(rgb_out)
     );
     
@@ -142,6 +144,8 @@ module VGA(
         Red         <= rgb_out[11:8];
         Green       <= rgb_out[7:4];
         Blue        <= rgb_out[3:0];
+        hblnk_out   <= h_blnk;
+        vblnk_out   <= v_blnk;
       end
     
 endmodule

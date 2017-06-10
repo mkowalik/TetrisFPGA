@@ -93,6 +93,7 @@ module New_Brick(
     integer p, q;
     
     always @* begin
+        brick_tab_nxt = brick_tab;
         if (new_brick_flag==1'b1) begin;
             brick_tab_nxt = new_brick_tab_nxt;
             new_brick_done_nxt = 1'b1;
@@ -123,7 +124,7 @@ module New_Brick(
         end //if
     end
     
-    always @(posedge clk_down) begin
+    always @(posedge clk_down) begin    //TODO zmienic na kombinacyjny oparty na clk_100MHz
         brick_tab <= brick_tab_nxt;  
     end
     

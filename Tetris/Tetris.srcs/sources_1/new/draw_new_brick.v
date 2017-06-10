@@ -41,7 +41,7 @@ module draw_new_brick(
     );
     
     reg [11:0] rgb_nxt;
-    reg [8:0]  New_brick_tab_del, New_brick_tab_del2;
+    reg [449:0]  New_brick_tab_del, New_brick_tab_del2;
     
     always @ (posedge pclk_in)
         begin
@@ -52,7 +52,7 @@ module draw_new_brick(
             hblnk_out  <= hblnk_in;
             vcount_out <= vcount_in;
             vsync_out  <= vsync_in;
-            vblnk_out  <= vblnk_out;
+            vblnk_out  <= vblnk_in;
             rgb_out    <= rgb_nxt;
         end
         

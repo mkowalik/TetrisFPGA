@@ -43,12 +43,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports {b[3]}]
 #set_property PACKAGE_PIN J1 [get_ports {pclk_mirror}]
 #set_property IOSTANDARD LVCMOS33 [get_ports {pclk_mirror}]
 
-## LEDs
-set_property PACKAGE_PIN U16 [get_ports {led[0]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
-set_property PACKAGE_PIN E19 [get_ports {led[1]}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
-
 ##7 segment display
 set_property PACKAGE_PIN W7 [get_ports {seg[6]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {seg[6]}]
