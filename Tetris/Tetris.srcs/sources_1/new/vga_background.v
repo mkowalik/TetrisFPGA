@@ -21,7 +21,8 @@
 
 
 module draw_background(
-    input wire [449:0]  Old_brick_tab,
+    input wire [449:0]  Old_brick_tab_in,
+    input wire [449:0]  New_brick_tab_in,
     input wire [10:0] hcount_in,
     input wire        hsync_in,
     input wire        hblnk_in,
@@ -30,6 +31,7 @@ module draw_background(
     input wire        vblnk_in,
     input wire        pclk_in,
     
+    output reg [449:0]  New_brick_tab_out,
     output reg [10:0] hcount_out,
     output reg        hsync_out,
     output reg        hblnk_out,
@@ -42,7 +44,6 @@ module draw_background(
     reg [3:0] r = 4'b0;
     reg [3:0] g = 4'b0;
     reg [3:0] b = 4'b0;
-    reg [449:0] Old_brick_tab_del;
     
     always @(posedge pclk_in)
       begin
@@ -52,8 +53,8 @@ module draw_background(
         vcount_out <= vcount_in;
         vsync_out  <= vsync_in;
         vblnk_out  <= vblnk_out;
+        New_brick_tab_out <= New_brick_tab_in;
         rgb_out    <= {r,g,b};
-        Old_brick_tab_del <= Old_brick_tab;
       end
         // During blanking, make it it black.
         
@@ -73,7 +74,7 @@ module draw_background(
                   else if (hcount_in == 799) {r,g,b} = 12'h0_0_f;
                   // Active display, interior, fill with gray.
                   // You will replace this with your own test.
-                  else if (Old_brick_tab_del[((vcount_in/32)*25)+(hcount_in/32)])
+                  else if (Old_brick_tab_in[((vcount_in/32)*25)+(hcount_in/32)])
                     {r,g,b} = 12'hf_0_f;
                   else if (vcount_in > 575) {r,b,g} = 12'h0_0_0;
               end

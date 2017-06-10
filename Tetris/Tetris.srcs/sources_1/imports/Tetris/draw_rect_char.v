@@ -22,6 +22,7 @@
 
 module draw_rect_char(
     input wire          clk,
+    input wire [449:0]  New_brick_tab_in,
     input wire [10:0]   hcount_in,
     input wire          hsync_in,
     input wire          hblnk_in,
@@ -31,6 +32,7 @@ module draw_rect_char(
     input wire [11:0]   rgb_in,
     input wire [7:0]    char_pixels,
     
+    output reg [449:0]  New_brick_tab_out,
     output reg [10:0]   hcount_out,
     output reg          hsync_out,
     output reg          hblnk_out,
@@ -48,10 +50,12 @@ module draw_rect_char(
     reg [10:0]  hcount_del, vcount_del;
     reg [11:0]  rgb_del;
     reg         hsync_del, hblnk_del, vsync_del, vblnk_del;
+    reg [449:0] New_brick_tab_del;
     
     
     always @ (posedge clk)
         begin
+            New_brick_tab_del <= New_brick_tab_in;
             hcount_del <= hcount_in;
             hsync_del  <= hsync_in;
             hblnk_del  <= hblnk_in;
@@ -64,6 +68,7 @@ module draw_rect_char(
     
     always @ (posedge clk)
         begin
+            New_brick_tab_out <= New_brick_tab_del;
             hcount_out <= hcount_del;
             hsync_out  <= hsync_del;
             hblnk_out  <= hblnk_del;

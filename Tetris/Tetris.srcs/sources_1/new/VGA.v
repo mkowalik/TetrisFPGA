@@ -35,12 +35,13 @@ module VGA(
     
     wire [10:0] vcount, hcount, vcount_bckg, hcount_bckg, vcount_char, hcount_char;
     wire        vsync, hsync, vblnk, hblnk, v_sync, h_sync, vsync_bckg, hsync_bckg, vblnk_bckg, hblnk_bckg;
-    wire        vsync_char, hsync_char, vblnk_char, hblnk_char, v_blnk, h_blnk;
+    wire        vsync_char, hsync_char, vblnk_char, hblnk_char; // v_blnk, h_blnk
     wire [11:0] rgb_out, rgb_bckg, rgb_char;
     wire [7:0]  char_pixels;
     wire [7:0]  char_xy;
     wire [6:0]  char_code;
     wire [3:0]  char_line;
+    wire [449:0]Old_brick_tab_tim, New_brick_tab_bckg, New_brick_tab_char, New_brick_tab_tim;
     
     vga_timing my_vga_timing(
         .vcount(vcount),
@@ -49,12 +50,18 @@ module VGA(
         .hcount(hcount),
         .hsync(hsync),
         .hblnk(hblnk),
-        .pclk(clk_40MHz)
+        .Old_brick_tab_out(Old_brick_tab_tim),
+        .New_brick_tab_out(New_brick_tab_tim),
+        
+        .pclk(clk_40MHz),
+        .Old_brick_tab_in(Old_brick_tab),
+        .New_brick_tab_in(New_brick_tab)
     );
     
     draw_background my_draw_background(
     
-        .Old_brick_tab(Old_brick_tab),
+        .Old_brick_tab_in(Old_brick_tab_tim),
+        .New_brick_tab_in(New_brick_tab_tim),
         .hcount_in(hcount),
         .hsync_in(hsync),
         .hblnk_in(hblnk),
@@ -63,6 +70,7 @@ module VGA(
         .vblnk_in(vblnk),
         .pclk_in(clk_40MHz),
     
+        .New_brick_tab_out(New_brick_tab_bckg),
         .hcount_out(hcount_bckg),
         .hsync_out(hsync_bckg),
         .hblnk_out(hblnk_bckg),
@@ -72,9 +80,10 @@ module VGA(
         .rgb_out(rgb_bckg)
     
     );
-    
+  
     draw_rect_char my_draw_new_char(
         .clk(clk_40MHz),
+        .New_brick_tab_in(New_brick_tab_bckg),
         .hcount_in(hcount_bckg),
         .hsync_in(hsync_bckg),
         .hblnk_in(hblnk_bckg),
@@ -84,6 +93,7 @@ module VGA(
         .rgb_in(rgb_bckg),
         .char_pixels(char_pixels),
        
+        .New_brick_tab_out(New_brick_tab_char),
         .hcount_out(hcount_char),
         .hsync_out(hsync_char),
         .hblnk_out(hblnk_char),
@@ -111,11 +121,11 @@ module VGA(
         .char_line_pixels(char_pixels) 
     
     );
-    
+ 
     
     
     draw_new_brick my_draw_new_brick(
-        .New_brick_tab(New_brick_tab),
+        .New_brick_tab(New_brick_tab_char),
         .rgb_in(rgb_char),
         .hcount_in(hcount_char),
         .hsync_in(hsync_char),
@@ -127,10 +137,10 @@ module VGA(
         
         .hcount_out(),
         .hsync_out(h_sync),
-        .hblnk_out(h_blnk),
+        .hblnk_out(),
         .vcount_out(),
         .vsync_out(v_sync),
-        .vblnk_out(v_blnk),
+        .vblnk_out(),
         .rgb_out(rgb_out)
     );
     
@@ -144,8 +154,8 @@ module VGA(
         Red         <= rgb_out[11:8];
         Green       <= rgb_out[7:4];
         Blue        <= rgb_out[3:0];
-        hblnk_out   <= h_blnk;
-        vblnk_out   <= v_blnk;
+        //hblnk_out   <= h_blnk;
+        //vblnk_out   <= v_blnk;
       end
     
 endmodule
