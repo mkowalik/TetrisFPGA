@@ -70,6 +70,9 @@ set_property PACKAGE_PIN V4 [get_ports {an[2]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[2]}]
 set_property PACKAGE_PIN W4 [get_ports {an[3]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[3]}]
+	
+set_property PACKAGE_PIN T18 [get_ports btnU]						
+	set_property IOSTANDARD LVCMOS33 [get_ports btnU]
 
 # Constraints for CFGBVS
 set_property CFGBVS VCCO [current_design]
