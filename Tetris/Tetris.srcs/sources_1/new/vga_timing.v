@@ -10,7 +10,12 @@ module vga_timing (
   output reg [10:0] hcount =0,
   output reg hsync,
   output reg hblnk,
-  input wire pclk
+  output reg [449:0]Old_brick_tab_out,
+  output reg [449:0]New_brick_tab_out,
+  
+  input wire pclk,
+  input wire [449:0]Old_brick_tab_in,
+  input wire [449:0]New_brick_tab_in
   );
 
   // Describe the actual circuit for the assignment.
@@ -35,12 +40,14 @@ module vga_timing (
     
     always @ (posedge pclk)
     begin
-    hcount <= hcount_nxt;
-    hsync  <= hsync_nxt;
-    hblnk  <= hblnk_nxt;
-    vcount <= vcount_nxt;
-    vsync  <= vsync_nxt;
-    vblnk  <= vblnk_nxt;
+        hcount <= hcount_nxt;
+        hsync  <= hsync_nxt;
+        hblnk  <= hblnk_nxt;
+        vcount <= vcount_nxt;
+        vsync  <= vsync_nxt;
+        vblnk  <= vblnk_nxt;
+        Old_brick_tab_out <= Old_brick_tab_in;
+        New_brick_tab_out <= New_brick_tab_in;
     end
     
     always @ *
