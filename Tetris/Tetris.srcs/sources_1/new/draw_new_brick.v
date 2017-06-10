@@ -40,13 +40,21 @@ module draw_new_brick(
     output reg [11:0] rgb_out
     );
     
-    reg [11:0] rgb_nxt;
-    reg [449:0]  New_brick_tab_del, New_brick_tab_del2;
+    reg [11:0]  rgb_nxt;
+    wire [449:0]  New_brick_tab_del;
+    
+    delay  # (
+        .WIDTH(450),
+        .CLK_DEL(3)
+    ) new_brick_delay (
+        .clk(pclk_in),
+        .rst(1'b0),
+        .din(New_brick_tab),
+        .dout(New_brick_tab_del)
+    );
     
     always @ (posedge pclk_in)
         begin
-            New_brick_tab_del   <= New_brick_tab;
-            New_brick_tab_del2  <= New_brick_tab_del;
             hcount_out <= hcount_in;
             hsync_out  <= hsync_in;
             hblnk_out  <= hblnk_in;
@@ -59,7 +67,7 @@ module draw_new_brick(
             
     always @ *
         begin
-            if (New_brick_tab_del2[((vcount_in/32)*25)+(hcount_in/32)])
+            if (New_brick_tab_del[((vcount_in/32)*25)+(hcount_in/32)])
                 rgb_nxt = 12'h7_8_9;
             else
                 rgb_nxt = rgb_in;

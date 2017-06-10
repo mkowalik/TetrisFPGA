@@ -78,9 +78,9 @@ module draw_rect_char(
 
     always @ *
         begin
-            char_xy_nxt   = {vcount_del[7:4], hcount_del[6:3]};
+            char_xy_nxt   = hcount_del[10:3];
             char_line_nxt = vcount_del[3:0];
-            if ( ( (hcount_del > 'd0) && (hcount_del <= ( 'd799) ) ) && ( ( vcount_del  > 'd575 ) && (vcount_del <= ( 'd799 ) ) ) )
+            if ( ( (hcount_del > 'd0) && (hcount_del <= ( 'd799) ) ) && ( ( vcount_del  > 'd575 ) && (vcount_del <= ( 'd591 ) ) ) )
                 begin
                     char_xy = char_xy_nxt;
                     char_line = char_line_nxt;

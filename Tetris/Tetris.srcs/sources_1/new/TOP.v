@@ -29,11 +29,10 @@ module TOP (
     output wire  [3:0]   r,
     output wire  [3:0]   b,
     output wire  [3:0]   g,
-    output wire          h_blnk,
-    output wire          v_blnk,
     output wire [6:0]    seg,    // segments (active LOW)
     output wire          dp,     // dot in segment display (active LOW)
-    output wire [3:0]    an      // anode enable (active LOW)
+    output wire [3:0]    an,      // anode enable (active LOW)
+    input wire           btnU
     );
     
     wire        clk_down, clk_40MHz, clk_100MHz;
@@ -72,7 +71,8 @@ module TOP (
         .Key_pressed(Key_pressed),
         .Key_code(Key_code),
         .Old_brick_tab(Old_brick_tab),
-        .New_brick_tab(New_brick_tab)
+        .New_brick_tab(New_brick_tab),
+        .btnU(btnU)
     );
     
     VGA my_VGA(

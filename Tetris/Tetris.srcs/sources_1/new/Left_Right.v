@@ -47,12 +47,12 @@ module Left_Right(
             else 
                 begin
                     Left_nxt    = 'b0;
-                    Right_nxt   = 'b0;
+                    Right_nxt   = 'b1;
                 end
         else
             begin
                 Left_nxt    = 'b0;
-                Right_nxt   = 'b0;
+                Right_nxt   = 'b1;
             end
             
     assign Left     =   Left_nxt;

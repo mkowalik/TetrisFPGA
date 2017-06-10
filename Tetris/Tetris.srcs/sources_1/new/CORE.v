@@ -27,7 +27,8 @@ module CORE(
     input wire           Key_pressed,
     input wire [15:0]    Key_code,  //TODO change for [15:0]
     output wire [449:0]   Old_brick_tab,
-    output wire [449:0]   New_brick_tab
+    output wire [449:0]   New_brick_tab,
+    input wire           btnU
     );
     
     wire            left, right; 
@@ -47,10 +48,12 @@ module CORE(
         .clk_100MHz(clk_100MHz),
         .left(left),
         .right(right),
-        .new_brick_signal(new_brick_signal),
+//        .new_brick_signal(new_brick_signal),
+        .new_brick_signal(btnU),
         .brick_tab(New_brick_tab)
     );
     
+    /*
     Logic my_Logic(
         .clk_down(clk_down),
         .New_brick_tab(New_brick_tab),
@@ -59,11 +62,13 @@ module CORE(
         .New_brick(new_brick_signal)
     );
     
+    
     Memory my_Memory(
         .clk_down(clk_down),
         .New_brick_signal(new_brick_signal),
         .Tab_save(Tab_save),
         .Old_brick_tab(Old_brick_tab)
     );
+    */
     
 endmodule
