@@ -21,7 +21,7 @@
 
 
 module draw_new_brick(
-    input wire [8:0]  New_brick_tab,
+    input wire [449:0]  New_brick_tab,
     input wire [11:0] rgb_in,
     input wire [10:0] hcount_in,
     input wire        hsync_in,

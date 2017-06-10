@@ -30,11 +30,11 @@ module TOP (
     output reg  [3:0]   b,
     output reg  [3:0]   g,
     output reg          h_blnk,
-    output reg          v_blnk,
-    output wire [6:0]   seg,    // segments (active LOW)
-    output wire         dp,     // dot in segment display (active LOW)
-    output wire [3:0]   an,      // anode enable (active LOW)
-    output wire [1:0]   led
+    output reg          v_blnk
+ //   output wire [6:0]   seg,    // segments (active LOW)
+ //   output wire         dp,     // dot in segment display (active LOW)
+ //   output wire [3:0]   an,      // anode enable (active LOW)
+ //   output wire [1:0]   led
     );
     
     wire        clk_down, clk_10kHz, clk_40MHz, clk_100MHz;
@@ -78,7 +78,7 @@ module TOP (
         .Key_code(Key_code)
     );
     
-    /*CORE my_CORE(
+    CORE my_CORE(
         .clk_down(clk_down),
         .clk_100MHz(clk_100MHz),
         .Key_pressed(Key_pressed),
@@ -110,8 +110,8 @@ module TOP (
             h_blnk <=   h_blnk_nxt;
             v_blnk <=   v_blnk_nxt;
         end
-        */
-            
+     
+    /*        
     disp_hex_mux my_disp_hex_mux (
      .clk(clk_100MHz), 
      .reset(1'b0),
@@ -131,5 +131,5 @@ module TOP (
     always @(posedge Key_pressed) begin
         led1_temp = ~led1_temp;
     end
-    
+    */
 endmodule

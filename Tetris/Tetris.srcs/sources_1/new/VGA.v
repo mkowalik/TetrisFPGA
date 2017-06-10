@@ -33,9 +33,14 @@ module VGA(
     output reg          vblnk_out
     );
     
-    wire [10:0] vcount, hcount, vcount_bckg, hcount_bckg;
+    wire [10:0] vcount, hcount, vcount_bckg, hcount_bckg, vcount_char, hcount_char;
     wire        vsync, hsync, vblnk, hblnk, v_sync, h_sync, vsync_bckg, hsync_bckg, vblnk_bckg, hblnk_bckg;
-    wire [11:0] rgb_out, rgb_bckg;
+    wire        vsync_char, hsync_char, vblnk_char, hblnk_char;
+    wire [11:0] rgb_out, rgb_bckg, rgb_char;
+    wire [7:0]  char_pixels;
+    wire [7:0]  char_xy;
+    wire [6:0]  char_code;
+    wire [3:0]  char_line;
     
     vga_timing my_vga_timing(
         .vcount(vcount),
@@ -68,15 +73,54 @@ module VGA(
     
     );
     
-    draw_new_brick(
-        .New_brick_tab(New_brick_tab),
-        .rgb_in(rgb_bckg),
+    draw_rect_char my_draw_new_char(
+        .clk(clk_40MHz),
         .hcount_in(hcount_bckg),
         .hsync_in(hsync_bckg),
         .hblnk_in(hblnk_bckg),
         .vcount_in(vcount_bckg),
         .vsync_in(vsync_bckg),
         .vblnk_in(vblnk_bckg),
+        .rgb_in(rgb_bckg),
+        .char_pixels(char_pixels),
+       
+        .hcount_out(hcount_char),
+        .hsync_out(hsync_char),
+        .hblnk_out(hblnk_char),
+        .vcount_out(vcount_char),
+        .vsync_out(vsync_char),
+        .vblnk_out(vblnk_char),
+        .rgb_out(rgb_char),
+        .char_xy(char_xy),
+        .char_line(char_line)
+    
+    );
+    
+    char_rom_16x16 my_char_rom_16x16(
+    
+        .char_xy(char_xy),
+        .char_code(char_code)
+    
+    );
+    
+    
+    font_rom my_font_rom(
+    
+        .clk(clk_40MHz),
+        .addr({char_code,char_line}),            
+        .char_line_pixels(char_pixels) 
+    
+    );
+    
+    draw_new_brick my_draw_new_brick(
+        .New_brick_tab(New_brick_tab),
+        .rgb_in(rgb_char),
+        .hcount_in(hcount_char),
+        .hsync_in(hsync_char),
+        .hblnk_in(hblnk_char),
+        .vcount_in(vcount_char),
+        .vsync_in(vsync_char),
+        .vblnk_in(vblnk_char),
         .pclk_in(clk_40MHz),
         
         .hcount_out(),
@@ -87,6 +131,8 @@ module VGA(
         .vblnk_out(),
         .rgb_out(rgb_out)
     );
+    
+    
     
       always @(posedge clk_40MHz)
       begin
