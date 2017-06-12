@@ -32,8 +32,8 @@ module CORE(
     input wire           btnU
     );
     
-    wire            left, right; 
-    wire [449:0]    New_brick_tab_brick;
+    wire            left, right, down; 
+    wire [449:0]    New_brick_tab_move_down;
     
     wire            Tab_save_signal_logic;
     wire [449:0]    New_brick_tab_logic, Tab_save_tab_logic;
@@ -44,28 +44,38 @@ module CORE(
     wire            Tab_save_signal_logic_loss;
     wire [449:0]    New_brick_tab_logic_loss, Tab_save_tab_logic_loss;
     
+    wire [449:0]    new_brick_prototype_tab;
+    
     
     Left_Right  my_Left_Right(
         .Key_pressed(Key_pressed),
         .Key_code(Key_code),
         .Left(left),
-        .Right(right)
+        .Right(right),
+        .Down(down)
+    );
+    
+    move_down my_move_down(
+            .clk_down(clk_down),
+            .clk_100MHz(clk_100MHz),
+            .left(left),
+            .right(right),
+            .new_brick_signal(Tab_save_signal_logic),
+            .first_brick(down),
+            .new_brick_prototype_tab(new_brick_prototype_tab),
+            .old_brick_tab(Old_brick_tab),
+            
+            .brick_tab(New_brick_tab_move_down)
     );
     
     New_Brick my_New_Brick(
-        .clk_down(clk_down),
         .clk_100MHz(clk_100MHz),
-        .left(left),
-        .right(right),
-        .new_brick_signal(Tab_save_signal_logic),
-        .first_brick(btnU),
-        
-        .brick_tab(New_brick_tab_brick)
+        .new_brick_prototype_tab(new_brick_prototype_tab)
     );
     
     Logic my_Logic(
         .clk_100MHz(clk_100MHz),
-        .New_brick_tab_in(New_brick_tab_brick),
+        .New_brick_tab_in(New_brick_tab_move_down),
         .Old_brick_tab_in(Old_brick_tab),
         
         .Tab_save_signal(Tab_save_signal_logic),
