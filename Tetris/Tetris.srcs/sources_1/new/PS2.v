@@ -108,10 +108,18 @@ begin
             Key_code_nxt =  16'hE074;
             Key_pressed_nxt = 1'b1;
         end
+        16'hF072: begin //DOWN ARROW break
+            Key_code_nxt =  16'hF072;
+            Key_pressed_nxt = 1'b1;
+        end
         default: begin
             case (last_byte_nxt)
                 8'h6B: begin //LEFT ARROW make
-                    Key_code_nxt =  16'h6B;
+                    Key_code_nxt =  16'h006B;
+                    Key_pressed_nxt = 1'b1;
+                end
+                8'h72: begin //DOWN ARROW make
+                    Key_code_nxt =  16'h0072;
                     Key_pressed_nxt = 1'b1;
                 end
             endcase
