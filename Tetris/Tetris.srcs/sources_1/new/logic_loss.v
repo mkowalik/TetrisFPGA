@@ -39,11 +39,10 @@ module logic_loss(
     
     always @* 
         begin
+            Game_over_nxt = 'd0;
             for (q='d0; q<'d25; q = q+'d1)
                 if (Tab_save_tab_in[q] == 1)
-                Game_over_nxt = 'd1;
-                else
-                Game_over_nxt = 'd0;
+                    Game_over_nxt = 'd1;
         end
         
     always @ (posedge clk_100MHz)

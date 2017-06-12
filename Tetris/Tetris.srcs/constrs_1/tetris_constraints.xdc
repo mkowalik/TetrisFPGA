@@ -73,6 +73,12 @@ set_property PACKAGE_PIN W4 [get_ports {an[3]}]
 	
 set_property PACKAGE_PIN T18 [get_ports btnU]						
 	set_property IOSTANDARD LVCMOS33 [get_ports btnU]
+	
+## LEDs
+set_property PACKAGE_PIN U16 [get_ports {led[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
+set_property PACKAGE_PIN E19 [get_ports {led[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
 
 # Constraints for CFGBVS
 set_property CFGBVS VCCO [current_design]

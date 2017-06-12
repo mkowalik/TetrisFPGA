@@ -32,7 +32,8 @@ module TOP (
     output wire [6:0]    seg,    // segments (active LOW)
     output wire          dp,     // dot in segment display (active LOW)
     output wire [3:0]    an,      // anode enable (active LOW)
-    input wire           btnU
+    input wire           btnU,
+    output wire [1:0]    led
     );
     
     wire        clk_down, clk_40MHz, clk_100MHz;
@@ -40,6 +41,8 @@ module TOP (
     wire [15:0] Key_code;
     wire [449:0]Old_brick_tab, New_brick_tab;
     wire        Game_over;
+    assign      led[0] = Game_over;
+    assign      led[1] = 1'b1;
     
     clk_wiz_0 my_clk_wiz (
         .clk(clk),

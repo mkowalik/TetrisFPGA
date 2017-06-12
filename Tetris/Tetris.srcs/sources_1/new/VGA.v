@@ -170,7 +170,7 @@ module VGA(
     
     );
     
-        char_rom_100x1 my_char_rom_100x1_game_over(
+    char_rom_loose_100x1 my_char_rom_100x1_game_over(
     
         .char_xy(char_xy_go),
         .char_code(char_code_go)
