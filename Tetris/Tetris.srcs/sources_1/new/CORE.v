@@ -62,6 +62,7 @@ module CORE(
             .new_brick_signal(Tab_save_signal_logic),
             .first_brick(down),
             .new_brick_prototype_tab(new_brick_prototype_tab),
+            .old_brick_tab(Old_brick_tab),
             
             .brick_tab(New_brick_tab_move_down)
     );

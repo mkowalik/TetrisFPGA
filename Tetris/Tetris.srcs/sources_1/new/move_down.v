@@ -28,6 +28,7 @@ module move_down(
     input wire              new_brick_signal,
     input wire              first_brick,
     input wire [449:0]      new_brick_prototype_tab,
+    input wire [449:0]      old_brick_tab,
     output reg [449:0]      brick_tab
     );
 
@@ -57,6 +58,9 @@ module move_down(
     reg         left_right_done_flag_nxt;
     
     reg         new_brick_signal_or;
+    
+    reg         move_left, move_right;
+    reg         possible_move_left, possible_move_right;
     
     always @* begin
         new_brick_signal_or = first_brick | new_brick_signal ;
@@ -100,12 +104,18 @@ module move_down(
     
     task count_indexes_to_go_down_and_left_right;
     begin
+    
+        check_if_can_move_left(possible_move_left);
+        check_if_can_move_right(possible_move_right);
+        move_left = (left_inner_flag & possible_move_left);
+        move_right = (right_inner_flag & possible_move_right);
+    
         for (p='d0; p<'d18; p = p+'d1) begin
             for (q='d0; q<'d25; q = q+'d1) begin
                 if (p=='d0)
                     brick_tab_nxt[p*'d25+q] = 1'b0;
                 else begin
-                    case ({left_inner_flag, right_inner_flag})
+                    case ({move_left, move_right})
                         2'b10: begin 
                             index = (q+'d1<'d25) ? ((p-'d1)*'d25+q+'d1) : (p-'d1)*'d25+q; 
                             brick_tab_nxt[p*'d25+q] = brick_tab[index];
@@ -122,6 +132,40 @@ module move_down(
                 end //else
             end //for
         end //for    
+    end
+    endtask
+    
+    task check_if_can_move_left;
+    output can_move_left;
+    begin
+    
+    can_move_left = 1'b1;
+    
+    for (p='d1; p<'d18; p = p+'d1) begin
+        for (q='d0; q<'d25; q = q+'d1) begin
+            index = (p-'d1)*'d25+q;
+            if (q=='d0 && brick_tab[index] == 1'b1)
+                can_move_left = 1'b0;
+        end 
+    end
+    
+    end
+    endtask
+        
+    task check_if_can_move_right;
+    output can_move_right;
+    begin
+    
+    can_move_right = 1'b1;
+    
+    for (p='d1; p<'d18; p = p+'d1) begin
+        for (q='d0; q<'d25; q = q+'d1) begin
+            index = (p-'d1)*'d25+q;
+            if (q=='d24 && brick_tab[index] == 'b1)
+                can_move_right = 1'b0;
+        end 
+    end
+    
     end
     endtask
         
