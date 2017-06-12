@@ -45,7 +45,7 @@ module New_Brick(
     reg [2:0] __brick_type;
     reg [15:0] __brick_prototype;
         
-    integer i, j;
+    reg [4:0] i, j;
         
     reg [449:0]   new_brick_tab_nxt;
     
@@ -70,12 +70,12 @@ module New_Brick(
     end
     
     always @* begin
-        for (i=0; i<18; i = i+1) begin
-            for (j=0; j<25; j = j+1) begin
-                if (j>=__position && j<__position+4 && i<4) 
-                    new_brick_tab_nxt[i*25+j] = __brick_prototype[i*4+j-__position];
+        for (i='d0; i<'d18; i = i+'d1) begin
+            for (j='d0; j<'d25; j = j+'d1) begin
+                if (j>=__position && j<__position+'d4 && i<'d4) 
+                    new_brick_tab_nxt[i*'d25+j] = __brick_prototype[i*'d4+j-__position];
                 else
-                    new_brick_tab_nxt[i*25+j] = 0;
+                    new_brick_tab_nxt[i*'d25+j] = 0;
             end
         end
     end
@@ -89,8 +89,8 @@ module New_Brick(
     reg         new_brick_done;
     reg         new_brick_done_nxt;
     
-    integer index;
-    integer p, q;
+    reg [8:0] index;
+    reg [4:0] p,q;
     
     reg         left_inner_flag;
     reg         left_inner_flag_nxt;
@@ -142,23 +142,23 @@ module New_Brick(
     
     task count_indexes_to_go_down_and_left_right;
     begin
-        for (p=0; p<18; p = p+1) begin
-            for (q=0; q<25; q = q+1) begin
-                if (p==0)
-                    brick_tab_nxt[p*25+q] = 1'b0;
+        for (p='d0; p<'d18; p = p+'d1) begin
+            for (q='d0; q<'d25; q = q+'d1) begin
+                if (p=='d0)
+                    brick_tab_nxt[p*'d25+q] = 1'b0;
                 else begin
                     case ({left_inner_flag, right_inner_flag})
                         2'b10: begin 
-                            index = (q+1<25) ? ((p-1)*25+q+1) : (p-1)*25+q; 
-                            brick_tab_nxt[p*25+q] = brick_tab[index];
+                            index = (q+'d1<'d25) ? ((p-'d1)*'d25+q+'d1) : (p-'d1)*'d25+q; 
+                            brick_tab_nxt[p*'d25+q] = brick_tab[index];
                             end
                         2'b01: begin
-                            index = q>0 ? (p-1)*25+q-1 : (p-1)*25+q;
-                            brick_tab_nxt[p*25+q] <= brick_tab[index];
+                            index = q>'d0 ? (p-'d1)*'d25+q-'d1 : (p-'d1)*'d25+q;
+                            brick_tab_nxt[p*'d25+q] <= brick_tab[index];
                             end
                         default: begin 
-                            index = (p-1)*25+q;
-                            brick_tab_nxt[p*25+q] <= brick_tab[index];
+                            index = (p-'d1)*'d25+q;
+                            brick_tab_nxt[p*'d25+q] <= brick_tab[index];
                         end
                     endcase
                 end //else

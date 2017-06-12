@@ -32,29 +32,29 @@ module Logic(
     reg             Tab_save_signal_nxt;
     reg [449:0]     Tab_save_tab_nxt;
     
-    integer p, q;
-    integer index_up, index_down;
+    reg [4:0] p, q;
+    reg [8:0] index_up, index_down;
         
     always @* begin
         
         Tab_save_signal_nxt = 1'b0;
         Tab_save_tab_nxt = Tab_save_tab;
     
-        for (p=0; p<18; p = p+1) begin
-            for (q=0; q<25; q = q+1) begin
-                if (p<17) begin
-                index_up = (p*25) + q;
-                index_down = ((p+1)*25) + q;
+        for (p='d0; p<'d18; p = p+'d1) begin
+            for (q='d0; q<'d25; q = q+'d1) begin
+                if (p<'d17) begin
+                index_up = (p*'d25) + q;
+                index_down = ((p+'d1)*'d25) + q;
                 
-                if ((New_brick_tab_in[index_up] == 1) && (Old_brick_tab_in[index_down] == 1)) begin 
+                if ((New_brick_tab_in[index_up] == 'd1) && (Old_brick_tab_in[index_down] == 'd1)) begin 
                     Tab_save_signal_nxt = 1'b1;
                     Tab_save_tab_nxt = New_brick_tab_in | Old_brick_tab_in;
                 end
                 
                 end else begin
                     // p == 17     
-                    index_up = (p*25) + q;   
-                    if ( (New_brick_tab_in[index_up] == 1)) begin 
+                    index_up = (p*'d25) + q;   
+                    if ( (New_brick_tab_in[index_up] == 'd1)) begin 
                         Tab_save_signal_nxt = 1'b1;
                         Tab_save_tab_nxt = New_brick_tab_in | Old_brick_tab_in;
                     end
