@@ -26,6 +26,7 @@ module New_Brick(
     input wire              left,
     input wire              right,
     input wire              new_brick_signal,
+    input wire              first_brick,
     output reg [449:0]      brick_tab
     );
     
@@ -104,6 +105,12 @@ module New_Brick(
     reg         left_right_done_flag;
     reg         left_right_done_flag_nxt;
     
+    reg         new_brick_signal_or;
+    
+    always @* begin
+        new_brick_signal_or = first_brick | new_brick_signal ;
+    end
+    
     always @* begin
         brick_tab_nxt = brick_tab;   
         new_brick_done_nxt = new_brick_done;
@@ -130,9 +137,9 @@ module New_Brick(
             
         endcase // {clk_down, go_down_done_flag}
         
-        case ({new_brick_signal, new_brick_flag})
+        case ({new_brick_signal_or, new_brick_flag})
             2'b00: new_brick_done_nxt = 1'b0;
-        endcase // {new_brick_signal, new_brick_flag}
+        endcase // {new_brick_signal_or, new_brick_flag}
         
         case ({left, right, left_inner_flag_nxt, right_inner_flag})
             4'b0000: left_right_done_flag_nxt = 1'b0;
@@ -169,7 +176,7 @@ module New_Brick(
         
     always @* begin
         new_brick_flag_nxt = new_brick_flag;
-        case ({new_brick_signal, new_brick_done})
+        case ({new_brick_signal_or, new_brick_done})
             2'b10: new_brick_flag_nxt = 1'b1;
             2'b01: new_brick_flag_nxt = 1'b0;
         endcase 

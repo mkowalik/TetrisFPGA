@@ -86,8 +86,7 @@ module logic_delete_line(
     
     
     
-    
-    
+        
     integer index_up, index_down;
     
     task delete_row_task;
