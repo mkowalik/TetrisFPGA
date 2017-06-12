@@ -39,6 +39,7 @@ module TOP (
     wire        Key_pressed;
     wire [15:0] Key_code;
     wire [449:0]Old_brick_tab, New_brick_tab;
+    wire        Game_over;
     
     clk_wiz_0 my_clk_wiz (
         .clk(clk),
@@ -72,6 +73,7 @@ module TOP (
         .Key_code(Key_code),
         .Old_brick_tab(Old_brick_tab),
         .New_brick_tab(New_brick_tab),
+        .Game_over(Game_over),
         .btnU(btnU)
     );
     
@@ -79,6 +81,7 @@ module TOP (
         .clk_40MHz(clk_40MHz),
         .Old_brick_tab(Old_brick_tab),
         .New_brick_tab(New_brick_tab),
+        .Game_over(Game_over),
         .hsync_out(hs),
         .vsync_out(vs),
         .Red(r),

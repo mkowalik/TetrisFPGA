@@ -28,6 +28,7 @@ module CORE(
     input wire [15:0]    Key_code,  //TODO change for [15:0]
     output wire [449:0]  Old_brick_tab,
     output wire [449:0]  New_brick_tab,
+    output wire          Game_over,
     input wire           btnU
     );
     
@@ -91,7 +92,8 @@ module CORE(
         
         .Tab_save_tab_out(Tab_save_tab_logic_loss),
         .Tab_save_signal_out(Tab_save_signal_logic_loss),
-        .New_brick_tab_out(New_brick_tab_logic_loss)
+        .New_brick_tab_out(New_brick_tab_logic_loss),
+        .Game_over(Game_over)
     );
     
     

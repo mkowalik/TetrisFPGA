@@ -24,6 +24,7 @@ module VGA(
     input wire          clk_40MHz,
     input wire  [449:0] Old_brick_tab,
     input wire  [449:0] New_brick_tab,
+    input wire          Game_over,
     output reg          hsync_out,
     output reg          vsync_out,
     output reg  [3:0]   Red,
@@ -33,14 +34,14 @@ module VGA(
     output reg          vblnk_out
     );
     
-    wire [10:0] vcount, hcount, vcount_bckg, hcount_bckg, vcount_char, hcount_char;
-    wire        vsync, hsync, vblnk, hblnk, v_sync, h_sync, vsync_bckg, hsync_bckg, vblnk_bckg, hblnk_bckg;
-    wire        vsync_char, hsync_char, vblnk_char, hblnk_char; // v_blnk, h_blnk
-    wire [11:0] rgb_out, rgb_bckg, rgb_char;
-    wire [7:0]  char_pixels;
-    wire [7:0]  char_xy;
-    wire [6:0]  char_code;
-    wire [3:0]  char_line;
+    wire [10:0] vcount, hcount, vcount_bckg, hcount_bckg, vcount_char, hcount_char, hcount_go, vcount_go;
+    wire        vsync, hsync, vblnk, hblnk, v_sync, h_sync, vsync_bckg, hsync_bckg, vblnk_bckg, hblnk_bckg, hblnk_go, vblnk_go;
+    wire        vsync_char, hsync_char, vblnk_char, hblnk_char, hsync_go, vsync_go; // v_blnk, h_blnk
+    wire [11:0] rgb_out, rgb_bckg, rgb_char, rgb_go;
+    wire [7:0]  char_pixels, char_pixels_go;
+    wire [7:0]  char_xy, char_xy_go;
+    wire [6:0]  char_code, char_code_go;
+    wire [3:0]  char_line, char_line_go;
     wire [449:0]Old_brick_tab_tim, New_brick_tab_bckg, New_brick_tab_char, New_brick_tab_tim;
     
     vga_timing my_vga_timing(
@@ -135,15 +136,55 @@ module VGA(
         .vblnk_in(vblnk_char),
         .pclk_in(clk_40MHz),
         
+        .hcount_out(hcount_go),
+        .hsync_out(hsync_go),
+        .hblnk_out(hblnk_go),
+        .vcount_out(vcount_go),
+        .vsync_out(vsync_go),
+        .vblnk_out(vblnk_go),
+        .rgb_out(rgb_go)
+    );
+    
+    
+    game_over my_game_over (
+        .clk(clk_40MHz),
+        .hcount_in(hcount_go),
+        .hsync_in(hsync_go),
+        .hblnk_in(hblnk_go),
+        .vcount_in(vcount_go),
+        .vsync_in(vsync_go),
+        .vblnk_in(vblnk_go),
+        .rgb_in(rgb_go),
+        .Game_over(Game_over),
+        .char_pixels(char_pixels_go),
+    
         .hcount_out(),
         .hsync_out(h_sync),
         .hblnk_out(),
         .vcount_out(),
         .vsync_out(v_sync),
         .vblnk_out(),
-        .rgb_out(rgb_out)
+        .rgb_out(rgb_out),
+        .char_xy(char_xy_go),
+        .char_line(char_line_go)
+    
     );
     
+        char_rom_100x1 my_char_rom_100x1_game_over(
+    
+        .char_xy(char_xy_go),
+        .char_code(char_code_go)
+    
+    );
+    
+    
+    font_rom my_font_rom_game_over(
+    
+        .clk(clk_40MHz),
+        .addr({char_code_go,char_line_go}),            
+        .char_line_pixels(char_pixels_go) 
+    
+    );
     
     
       always @(posedge clk_40MHz)
