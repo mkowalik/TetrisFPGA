@@ -22,7 +22,7 @@
 
 module New_Brick(
     input wire              clk_100MHz,
-    output reg [449:0]      new_brick_prototype_tab
+    output reg [549:0]      new_brick_prototype_tab
     );
     
     //Underneth is part for prepering new_brick_type_prototype - new brick after receivin new_brick_signal
@@ -64,7 +64,7 @@ module New_Brick(
     end
     
     always @* begin
-        for (i='d0; i<'d18; i = i+'d1) begin
+        for (i='d0; i<'d22; i = i+'d1) begin
             for (j='d0; j<'d25; j = j+'d1) begin
                 if (j>=__position && j<__position+'d4 && i<'d4) 
                     new_brick_prototype_tab[i*'d25+j] = __brick_prototype[i*'d4+j-__position];

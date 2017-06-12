@@ -27,22 +27,26 @@ module move_down(
     input wire              right,
     input wire              new_brick_signal,
     input wire              first_brick,
-    input wire [449:0]      new_brick_prototype_tab,
+    input wire              game_over,
+    input wire [549:0]      new_brick_prototype_tab,
     input wire [449:0]      old_brick_tab,
-    output reg [449:0]      brick_tab
+    output wire [449:0]     brick_tab_out
     );
 
         
     //Undeneath is part for moving down new brick
-            
-    reg [449:0] brick_tab_nxt;
+    
+    reg [549:0]      brick_tab;
+    reg [549:0]      brick_tab_nxt;
+    
+    assign brick_tab_out = brick_tab[549:100];
       
     reg         new_brick_flag;
     reg         new_brick_flag_nxt;
     reg         new_brick_done;
     reg         new_brick_done_nxt;
     
-    reg [8:0] index;
+    reg [9:0] index;
     reg [4:0] p,q;
     
     reg         left_inner_flag;
@@ -63,7 +67,7 @@ module move_down(
     reg         possible_move_left, possible_move_right;
     
     always @* begin
-        new_brick_signal_or = first_brick | new_brick_signal ;
+        new_brick_signal_or = ~game_over & (first_brick | new_brick_signal);
     end
     
     always @* begin
@@ -110,7 +114,7 @@ module move_down(
         move_left = (left_inner_flag & possible_move_left);
         move_right = (right_inner_flag & possible_move_right);
     
-        for (p='d0; p<'d18; p = p+'d1) begin
+        for (p='d0; p<'d22; p = p+'d1) begin
             for (q='d0; q<'d25; q = q+'d1) begin
                 if (p=='d0)
                     brick_tab_nxt[p*'d25+q] = 1'b0;
@@ -141,7 +145,7 @@ module move_down(
     
     can_move_left = 1'b1;
     
-    for (p='d1; p<'d18; p = p+'d1) begin
+    for (p='d1; p<'d22; p = p+'d1) begin
         for (q='d0; q<'d25; q = q+'d1) begin
             index = (p-'d1)*'d25+q;
             if (q=='d0 && brick_tab[index] == 1'b1)
@@ -158,7 +162,7 @@ module move_down(
     
     can_move_right = 1'b1;
     
-    for (p='d1; p<'d18; p = p+'d1) begin
+    for (p='d1; p<'d22; p = p+'d1) begin
         for (q='d0; q<'d25; q = q+'d1) begin
             index = (p-'d1)*'d25+q;
             if (q=='d24 && brick_tab[index] == 'b1)

@@ -44,7 +44,7 @@ module CORE(
     wire            Tab_save_signal_logic_loss;
     wire [449:0]    New_brick_tab_logic_loss, Tab_save_tab_logic_loss;
     
-    wire [449:0]    new_brick_prototype_tab;
+    wire [549:0]    new_brick_prototype_tab;
     
     
     Left_Right  my_Left_Right(
@@ -56,16 +56,17 @@ module CORE(
     );
     
     move_down my_move_down(
-            .clk_down(clk_down),
-            .clk_100MHz(clk_100MHz),
-            .left(left),
-            .right(right),
-            .new_brick_signal(Tab_save_signal_logic),
-            .first_brick(down),
-            .new_brick_prototype_tab(new_brick_prototype_tab),
-            .old_brick_tab(Old_brick_tab),
-            
-            .brick_tab(New_brick_tab_move_down)
+        .clk_down(clk_down),
+        .clk_100MHz(clk_100MHz),
+        .left(left),
+        .right(right),
+        .new_brick_signal(Tab_save_signal_logic),
+        .first_brick(down),
+        .game_over(Game_over),
+        .new_brick_prototype_tab(new_brick_prototype_tab),
+        .old_brick_tab(Old_brick_tab),
+        
+        .brick_tab_out(New_brick_tab_move_down)
     );
     
     New_Brick my_New_Brick(
