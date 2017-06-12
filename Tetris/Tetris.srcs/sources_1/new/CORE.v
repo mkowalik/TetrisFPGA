@@ -32,8 +32,13 @@ module CORE(
     );
     
     wire            left, right; 
-    wire            Tab_save_signal;
-    wire [449:0]    New_brick_tab_brick, New_brick_tab_logic, Tab_save_tab;
+    wire [449:0]    New_brick_tab_brick;
+    
+    wire            Tab_save_signal_logic;
+    wire [449:0]    New_brick_tab_logic, Tab_save_tab_logic;
+    
+    wire            Tab_save_signal_logic_delete_line;
+    wire [449:0]    New_brick_tab_logic_delete_line, Tab_save_tab_logic_delete_line;
     
     
     Left_Right  my_Left_Right(
@@ -50,6 +55,7 @@ module CORE(
         .right(right),
 //        .new_brick_signal(new_brick_signal),
         .new_brick_signal(btnU),
+        
         .brick_tab(New_brick_tab_brick)
     );
     
@@ -57,17 +63,30 @@ module CORE(
         .clk_100MHz(clk_100MHz),
         .New_brick_tab_in(New_brick_tab_brick),
         .Old_brick_tab_in(Old_brick_tab),
-        .Tab_save_signal(Tab_save_signal),
-        .Tab_save_tab(Tab_save_tab),
+        
+        .Tab_save_signal(Tab_save_signal_logic),
+        .Tab_save_tab(Tab_save_tab_logic),
         .New_brick_tab_out(New_brick_tab_logic)
+    );
+    
+    logic_delete_line my_logic_delete_line (
+        .clk_100MHz(clk_100MHz),
+        .Tab_save_tab_in(Tab_save_tab_logic),
+        .Tab_save_signal_in(Tab_save_signal_logic),
+        .New_brick_tab_in(New_brick_tab_logic),
+        
+        .Tab_save_tab_out(Tab_save_tab_logic_delete_line),
+        .Tab_save_signal_out(Tab_save_signal_logic_delete_line),
+        .New_brick_tab_out(New_brick_tab_logic_delete_line)
     );
     
     
     Memory my_Memory(
         .clk_100MHz(clk_100MHz),
-        .New_brick_signal(Tab_save_signal),
-        .Tab_save(Tab_save_tab),
-        .New_brick_tab_in(New_brick_tab_logic),
+        .New_brick_signal(Tab_save_signal_logic_delete_line),
+        .Tab_save(Tab_save_tab_logic_delete_line),
+        .New_brick_tab_in(New_brick_tab_logic_delete_line),
+        
         .Old_brick_tab(Old_brick_tab),
         .New_brick_tab_out(New_brick_tab)
     );

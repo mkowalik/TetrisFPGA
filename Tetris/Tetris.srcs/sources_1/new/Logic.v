@@ -24,6 +24,7 @@ module Logic(
     input wire            clk_100MHz,
     input wire  [449:0]   New_brick_tab_in,
     input wire  [449:0]   Old_brick_tab_in,
+    
     output reg  [449:0]   Tab_save_tab = 449'b0,
     output reg            Tab_save_signal,
     output reg [449:0]    New_brick_tab_out
